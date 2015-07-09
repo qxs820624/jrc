@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <LinearLayout
+        android:id="@+id/sh_head_ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sh_head_all"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:text="全部"
+            android:textColor="#ffffff"
+            android:background="@drawable/tj_leftpre"
+            android:layout_height="wrap_content" />
+                <Button
+            android:id="@+id/sh_head_boy"
+            android:layout_weight="1"
+            android:text="    男生     "
+            android:background="@drawable/tj_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+                        <Button
+            android:id="@+id/sh_head_gril"
+            android:layout_weight="1"
+            android:text="    女生     "
+            android:background="@drawable/tj_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+        android:id="@+id/sh_head_ll2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+        android:layout_below="@+id/sh_head_ll1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sh_head_age_all"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:text="全部"
+            android:textColor="#ffffff"
+            android:background="@drawable/tj_leftpre"
+            android:layout_height="wrap_content" />
+                <Button
+            android:id="@+id/sh_head_xia"
+            android:layout_weight="1"
+            android:text="20岁以下"
+            android:background="@drawable/tj_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+                        <Button
+            android:id="@+id/sh_head_shang"
+            android:layout_weight="1"
+            android:text="20岁以上"
+            android:background="@drawable/tj_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+         <ImageView
+             android:id="@+id/sh_head_xian"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/sh_head_ll2"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/systemwebline" />
+   
+</RelativeLayout>

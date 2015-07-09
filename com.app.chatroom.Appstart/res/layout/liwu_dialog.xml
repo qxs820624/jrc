@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liwu_dialog_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chatroom_userinfo_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.app.chatroom.view.NetImageView
+        android:id="@+id/liwu_dialog_logo_ImageView"
+        android:layout_width="100.0dip"
+        android:layout_height="77.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/liwupic" />
+
+    <TextView
+        android:id="@+id/liwu_dialog_mark_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/liwu_dialog_logo_ImageView"
+        android:textColor="#521502"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/liwu_kuang" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liwu_dialog_mark_TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/liwu_dialog_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:text="购买"
+            android:textColor="#3c291b"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/liwu_dialog_editText"
+            android:layout_width="55.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/liwu_dialog_TextView"
+            android:background="@drawable/input_text2"
+            android:ellipsize="end"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="#833a16"
+            android:textColorHint="#c5934c"
+            android:textSize="15dp" >
+        </EditText>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/liwu_dialog_null_ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liwu_null_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/liwu_dialog_ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_ok_btn"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/liwu_dialog_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/message_cancel_btn"
+            android:gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

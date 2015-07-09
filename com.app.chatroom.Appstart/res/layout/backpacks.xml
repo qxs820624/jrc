@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/chatroom_userinfo_bg"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/bp_top_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/backpacks_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chatroom_userinfo_dialog_back_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/wodebeibao" />
+        </LinearLayout>
+            <ImageView
+        android:id="@+id/backpacks_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bp_top_ll"
+        android:background="@drawable/chatroom_userinfo_topline" />
+
+        <GridView
+            android:id="@+id/backpack_gd"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/backpacks_line"
+            android:fastScrollEnabled="false"
+            android:gravity="center_horizontal"
+              android:layout_marginTop="2dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="20dp"
+            >
+        </GridView>
+
+        <LinearLayout
+            android:id="@+id/backpacksproll"        
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loading_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/backpackspro"
+                style="@android:style/Widget.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminateDrawable="@drawable/custom_progress_draw" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/loading_text" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

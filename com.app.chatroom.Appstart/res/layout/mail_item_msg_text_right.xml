@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tv_mail_sendtime_right"
+        style="@style/chat_send_time_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="2.0dip"
+        android:paddingRight="2.0dip"
+        android:singleLine="true"
+        android:text="12:00:01" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_mail_sendtime_right"
+        android:layout_marginRight="5.0dip" >
+
+        <com.app.chatroom.view.NetImageView
+            android:id="@+id/iv_mail_userhead_right"
+            android:layout_width="36.0dp"
+            android:layout_height="36.0dp"
+            android:clickable="true"
+            android:src="@drawable/photo" />
+
+        <ImageView
+            android:id="@+id/facemask_mail_right"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:background="@drawable/chat_head_border_lan"
+            android:clickable="true"
+            android:src="@drawable/avatar_bg_lan_selector" />
+
+        <TextView
+            android:id="@+id/tv_mail_username_right"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_mail_userhead_right"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="43dp"
+            android:singleLine="true"
+            android:text="123"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rrMsgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mail_sendtime_right"
+        android:layout_marginRight="4.0dip"
+        android:layout_toLeftOf="@id/RelativeLayout1"
+        android:clickable="true"
+        android:paddingBottom="7.0dip"
+        android:paddingLeft="0.0dip"
+        android:paddingRight="0.0dip"
+        android:paddingTop="0.0dip"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_mail_content_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web|email"
+            android:background="@drawable/chat_right_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="left|center"
+            android:lineSpacingExtra="2dp"
+            android:textColor="#4a3708"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bt_mail_texterror_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/rrMsgText"
+        android:layout_alignTop="@id/rrMsgText"
+        android:layout_marginRight="10.0dip"
+        android:layout_toLeftOf="@id/rrMsgText"
+        android:src="@drawable/ptt_error_button_selector"
+        android:visibility="visible" />
+
+</RelativeLayout>

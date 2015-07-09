@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mail_list_RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/mail_list_RelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_mail_list"
+        android:clickable="true" >
+
+        <RelativeLayout
+            android:id="@+id/mail_list_RelativeLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/mail_list_header_image"
+                    android:layout_width="36.0dip"
+                    android:layout_height="36.0dip"
+                    android:src="@drawable/photo" />
+
+                <ImageView
+                    android:id="@+id/mail_list_facemask"
+                    android:layout_width="36.0dip"
+                    android:layout_height="36.0dip"
+                    android:background="@drawable/chat_head_border_lan"
+                    android:clickable="true"
+                    android:src="@drawable/avatar_bg_lan_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llMsgText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/RelativeLayout1" >
+
+                <ImageView
+                    android:id="@+id/mail_list_sex_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/llMsgText"
+                    android:src="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/mail_list_name_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/mail_item_num_RelativeLayout"
+                    android:layout_toRightOf="@+id/mail_list_sex_image"
+                    android:singleLine="true"
+                    android:text="酷酷熊"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <RelativeLayout
+                    android:id="@+id/mail_item_num_RelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" >
+
+                    <TextView
+                        android:id="@+id/mail_list_num_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mail_list_item_num_bg"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@android:color/white"
+                        android:textSize="10.0dip"
+                        android:visibility="visible" />
+
+                    <ImageButton
+                        android:id="@+id/mail_list_del_ImageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_mail_list_del_btn"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/mail_list_content_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/mail_list_sex_image"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toLeftOf="@+id/mail_item_num_RelativeLayout"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text="内容.."
+                    android:textColor="#4c4c4c"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mail_list_date_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/mail_list_RelativeLayout2"
+            android:layout_below="@+id/mail_list_RelativeLayout2"
+            android:layout_marginTop="1dp"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="2012-12-12 12:00:00"
+            android:textColor="#4c4c4c"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/duihuak"
+  android:layout_width="fill_parent"
+  android:layout_marginLeft="20dp"
+  android:layout_marginRight="20dp"
+  android:layout_height="wrap_content">
+  
+        <TextView 
+            android:id="@+id/msbt"
+  android:layout_marginTop="20dp"
+  android:layout_gravity="center_horizontal"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_centerHorizontal="true"
+   android:background="@drawable/wenxintishi"
+  />
+  <TextView 
+      android:id="@+id/mstt"
+       android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="#874a19"
+        android:text="确定要重新录制语音吗？"
+        android:layout_below="@+id/msbt"
+      />
+
+    <LinearLayout
+        android:layout_below="@+id/mstt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/msqueding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sure1"
+             />
+
+        <Button
+            android:id="@+id/msquxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/guanbi1"
+           />
+    </LinearLayout>
+</RelativeLayout>

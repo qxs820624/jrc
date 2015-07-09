@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatroom_userinfo_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/apply_linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/apply_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/apply_title" />
+
+            <Button
+                android:id="@+id/apply_close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/chatroom_userinfo_dialog_back_btn" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/apply_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@drawable/chatroom_userinfo_topline" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/apply_line"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="家族是私人领地，神圣不可侵犯！" />
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/chatroom_userinfo_bg2"
+                android:gravity="center_horizontal"
+                android:text="家族是私人领地，神圣不可侵犯！" />
+
+            <ImageView
+                android:id="@+id/apply_line2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_des"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/chatroom_userinfo_topline" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apply_line2"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="填写并提交家族信息！" />
+
+            <EditText
+                android:id="@+id/et_jiazuname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/chatroom_userinfo_bg2"
+                android:hint="输入创建家族的名称" />
+
+            <EditText
+                android:id="@+id/et_jiazuname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/chatroom_userinfo_bg2"
+                android:hint="输入创建家族的名称" />
+
+            <EditText
+                android:id="@+id/et_roomname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_jiazuname"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/chatroom_userinfo_bg2"
+                android:hint="输入聊天室的名称" />
+            
+             <TextView
+                android:id="@+id/tv3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_roomname"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="名称不超过4个汉字，不能包含特殊符号！" />
+             
+             <ImageView 
+                 android:id="@+id/jz_header"
+                 android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tv3"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                 />
+              <TextView
+                android:id="@+id/tv4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jz_header"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="点击图片，更换家族图标。" />
+              
+              <Button 
+                android:id="@+id/jz_makesure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv4"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                  />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

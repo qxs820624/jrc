@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mydazui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dazuihengtiao2"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+                        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dztop"
+        android:background="@drawable/dazuitop" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tabbar2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dazuihengtiao2"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/dazuicenter"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="2dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/luzhiyuyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/luzhiyuyinsel"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="#ff8400"
+                    android:textSize="17dp" >
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/jingcaiyuyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myyuyin1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:scaleType="matrix"
+                    android:textColor="#833a16"
+                    android:textSize="17dp" >
+                </Button>
+            </LinearLayout>
+                        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/wodeshoucang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mydazui_shoucang1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:scaleType="matrix"
+                    android:textColor="#833a16"
+                    android:textSize="17dp" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tabpag2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tabbar2"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/dazuidibu" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/dazuitabpager2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+    
+        <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabbar2"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/shangdz" >
+    </ImageButton>
+    
+        <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignBottom="@+id/tabpag2"
+        android:background="@drawable/xiadz" >
+    </ImageButton>
+    
+
+    <RelativeLayout
+        android:id="@+id/dztop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/mydazuiback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/mainback1"
+            android:onClick="dazui_back" >
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/myyuyinlogo" >
+        </TextView>
+
+        <Button
+            android:id="@+id/dazuidelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/garbage1s"
+            android:onClick="yysc_garbage" >
+        </Button>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressmore"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tabpag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="139dp"
+        android:indeterminateDrawable="@drawable/wait"
+        android:visibility="gone" >
+    </ProgressBar>
+
+</RelativeLayout>

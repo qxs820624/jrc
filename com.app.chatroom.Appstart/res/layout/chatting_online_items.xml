@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_list"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8.0dip" >
+
+            <ImageView
+                android:id="@+id/online_header_image"
+                android:layout_width="36.0dip"
+                android:layout_height="36.0dip"
+                android:src="@drawable/photo" />
+
+            <ImageView
+                android:id="@+id/facemask"
+                android:layout_width="36.0dip"
+                android:layout_height="36.0dip"
+                android:background="@drawable/chat_head_border"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llMsgText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_toRightOf="@id/RelativeLayout1" >
+
+            <ImageView
+                android:id="@+id/online_sex_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/llMsgText"
+                android:src="@drawable/man" />
+
+            <com.duom.fjz.iteminfo.MarqueeTextView
+                android:id="@+id/online_name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/online_level_imageView"
+                android:layout_toRightOf="@+id/online_sex_image"
+                marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="酷酷熊"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/online_name_textView"
+                android:layout_below="@+id/online_name_textView"
+                android:text="ID："
+                android:textColor="#ff833a16"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/online_uid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                android:text="6879"
+                android:textColor="#833a16"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:id="@+id/online_level_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/icon_bg_1" >
+
+                <TextView
+                    android:id="@+id/online_level_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="123"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/village_list_line" />
+
+</LinearLayout>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_menu_bg2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/village_left_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/title_btn_left" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/village_title" />
+            
+             <ImageButton
+                android:id="@+id/village_right_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginRight="8dp"
+              />
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2_dital"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="50dp" >
+
+        <LinearLayout
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/focus_ly"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/village_main_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/village_top_RelativeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:id="@+id/village_top_RelativeLayout2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/choose_item_bar"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/radioGroup"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center" >
+
+                                    <ImageView
+                                        android:id="@+id/village_farmer_radiobutton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/b_villagefarmerlist"
+                                        android:button="@null"
+                                        android:tag="radio_button0" >
+                                    </ImageView>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center" >
+
+                                    <ImageView
+                                        android:id="@+id/village_dayscore_radiobutton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/b_villagedayscorelist"
+                                        android:button="@null"
+                                        android:tag="radio_button1" >
+                                    </ImageView>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center" >
+
+                                    <ImageView
+                                        android:id="@+id/village_money_radiobutton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/b_villagemoneylist"
+                                        android:button="@null"
+                                        android:tag="radio_button1" >
+                                    </ImageView>
+                                </RelativeLayout>
+                                                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center" >
+
+                                    <ImageView
+                                        android:id="@+id/caifu_village_radiobutton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/caizhubang"
+                                        android:button="@null"
+                                        android:tag="radio_button1" >
+                                    </ImageView>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/choose_item_bar"
+                            android:layout_marginTop="5dp"
+                            android:scaleType="matrix" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/village_class_bg"
+                                android:scaleType="matrix" />
+
+                            <LinearLayout
+                                android:id="@+id/LinearLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+
+                                <RelativeLayout
+                                    android:layout_width="53.3dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center" >
+
+                                    <ImageView
+                                        android:id="@+id/img_tab_now"
+                                        android:layout_width="53.3dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/village_class_selected"
+                                        android:scaleType="matrix" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="53.3dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center" >
+
+                                    <ImageView
+                                        android:id="@+id/img_tab_now2"
+                                        android:layout_width="53.3dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/village_class_selected"
+                                        android:scaleType="matrix"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="53.3dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center" >
+
+                                    <ImageView
+                                        android:id="@+id/img_tab_now3"
+                                        android:layout_width="53.3dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/village_class_selected"
+                                        android:scaleType="matrix"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+                                     <RelativeLayout
+                                    android:layout_width="53.3dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center" >
+
+                                    <ImageView
+                                        android:id="@+id/img_tab_now4"
+                                        android:layout_width="53.3dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/village_class_selected"
+                                        android:scaleType="matrix"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/aaaaaaaa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/village_top_RelativeLayout"
+                    android:layout_centerHorizontal="true" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/village_tabpager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+                    </android.support.v4.view.ViewPager>
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/village_tabpager"
+                        android:layout_alignRight="@+id/village_tabpager"
+                        android:layout_alignTop="@+id/village_tabpager"
+                        android:background="@drawable/chatroom_top_effect" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/village_tabpager"
+                        android:layout_alignLeft="@+id/village_tabpager"
+                        android:layout_alignRight="@+id/village_tabpager"
+                        android:background="@drawable/village_bottom_effect2" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

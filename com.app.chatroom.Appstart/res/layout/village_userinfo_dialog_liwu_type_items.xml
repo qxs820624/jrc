@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_list_orange"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8.0dip" >
+
+            <ImageView
+                android:id="@+id/village_dialog_liwutype_item_header_image"
+                android:layout_width="43.0dip"
+                android:layout_height="43.0dip"
+                android:src="@drawable/liwupic" />
+
+            <ImageView
+                android:id="@+id/village_dialog_liwutype_item_facemask"
+                android:layout_width="43.0dip"
+                android:layout_height="43.0dip"
+                android:background="@drawable/chat_head_border_orange"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llMsgText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/RelativeLayout1"
+            android:gravity="center_vertical" >
+
+            <com.duom.fjz.iteminfo.MarqueeTextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/village_dialog_liwutype_item_name_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageviewjiantou"
+                marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="酷酷熊"
+                android:textColor="#69270e"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/imageviewjiantou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/userinfo_jiantou" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dialog_line" />
+
+</LinearLayout>

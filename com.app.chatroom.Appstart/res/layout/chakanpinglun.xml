@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="255dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/chakanrl"
+        android:layout_width="255dp"
+        android:layout_height="280dp"
+        android:background="@drawable/duihuak"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/chakanll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/chakantitle"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/titlechakan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#774576"
+                android:textSize="15dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/chakancontent"
+                android:layout_width="205dp"
+                android:focusable="true"
+                android:maxLines="6"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:textColor="#4c264b"
+                android:textSize="17dp" >
+            </TextView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/chakanll"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/chakanjubao"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/chakanguanbi"
+                android:layout_alignBottom="@+id/chakanguanbi"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/chakanguanbi"
+                android:background="@drawable/jubao1" >
+            </Button>
+
+            <Button
+                android:id="@+id/chakanguanbi"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/guanbi1" >
+            </Button>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chatroom_userinfo_bg" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/village_userinfo_dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/jbcz_title" />
+
+            <ImageButton
+                android:id="@+id/prop_close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4.0dip"
+                android:background="@drawable/chatroom_userinfo_dialog_back_btn" />
+
+            <ImageButton
+                android:id="@+id/prop_applay_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4.0dip"
+                android:background="@drawable/apply_jz1"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/chatroom_userinfo_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@drawable/chatroom_userinfo_topline" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/chatroom_userinfo_line" >
+
+        <RelativeLayout
+            android:id="@+id/aaaaaaaa"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/group1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ImageButton1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/p1" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/p2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group1"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ImageButton3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/p3" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/p4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group2"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ImageButton5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/p5" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/p6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group3"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ImageButton7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/p7" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/p8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group4"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ImageButton9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/p9" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton10"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/p10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group5"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ImageButton11"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/p11" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton12"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/p12" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

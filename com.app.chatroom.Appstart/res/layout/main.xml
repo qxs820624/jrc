@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainweixin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tabbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/top"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relatbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/titletar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="贱图"
+                android:textColor="#833a16"
+                android:textSize="17dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/titletar"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/sortbg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/zuo"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/zuojiantou"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sort"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="2dp" >
+
+                <TextView
+                    android:id="@+id/img_weixin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="#ff8400"
+                    android:textSize="17dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/img_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:scaleType="matrix"
+                    android:textColor="#833a16"
+                    android:textSize="17dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/img_friends"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:scaleType="matrix"
+                    android:textColor="#833a16"
+                    android:textSize="17dp" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/huadao"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/sort"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sortbg" />
+
+            <LinearLayout
+                android:id="@+id/img_tab_now"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="2dp"
+                android:layout_below="@+id/sort"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sortfour"
+                android:scaleType="matrix" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/you"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/youjiantou"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tabpag"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tabbar"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/liebiaodibu" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tabpager"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+        </android.support.v4.view.ViewPager>
+        
+                <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabbar2"
+        android:background="@drawable/shangxj" >
+    </ImageButton>
+
+        <ListView
+            android:id="@+id/morelv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/liebiaosort"
+            android:listSelector="@color/transparent"
+            android:scrollbarThumbVertical="@drawable/gun"
+            android:visibility="gone" >
+        </ListView>                
+    </RelativeLayout>
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tabpag"
+        
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/maindibuyj" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/mainback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/mainback1"
+            android:onClick="main_back" >
+        </Button>
+
+        <Button
+            android:id="@+id/sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/sort1"
+            android:onClick="main_sort" >
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo" >
+        </TextView>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressmore"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/wait"
+         android:background="@drawable/loading_bg"
+        android:visibility="gone" >
+    </ProgressBar>
+
+    <LinearLayout
+        android:id="@+id/iron"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tabbar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/iron" >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zhuanpan_bg"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/zp_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zp_back1" />
+
+    <ImageButton
+        android:id="@+id/zp_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/zp_help1" />
+
+    <ImageView
+        android:id="@+id/zp_logo"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/zhuanpan_logo" />
+    
+        <ImageButton
+        android:id="@+id/zp_small"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/zp_logo"
+        android:background="@drawable/zp_small1" />
+        
+        <TextView 
+            android:id="@+id/zp_tv1"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="每局赌资10银币"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_below="@+id/zp_small" 
+            />
+
+    <ImageButton
+        android:id="@+id/zp_big"
+                android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/zp_tv1"
+        android:background="@drawable/zp_big1" />
+    
+         <TextView 
+            android:id="@+id/zp_tv2"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="每局赌资1金币"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_below="@+id/zp_big" 
+            />
+
+         <ImageView 
+             android:id="@+id/zp_pan"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/zp_logo"
+      android:visibility="gone"
+             />
+                  <ImageView 
+                      android:id="@+id/zp_zhizhen"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/zp_logo"
+        android:visibility="gone"
+        android:background="@drawable/zhuanpan_zhizhen"
+             />
+                    <ImageView 
+             android:id="@+id/zp_dg"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/zp_logo"
+        android:visibility="gone"
+        android:background="@drawable/zhuanpan_dengguang"
+             />
+
+         <LinearLayout
+             android:id="@+id/zp_start_ll"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/zp_pan"
+android:visibility="gone"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="10dp" >
+
+                             <ImageButton
+        android:id="@+id/zp_phb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/zp_phb1" />
+         <ImageButton
+        android:id="@+id/zp_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/zp_start1" />
+                       
+                       <ImageButton
+        android:id="@+id/zp_pay"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/zp_pay1" />
+         </LinearLayout>
+         
+         <TextView 
+             android:id="@+id/zp_content"
+             android:layout_below="@+id/zp_start_ll"
+           android:visibility="gone"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:textColor="#000000"
+             android:text="总共抽取10次，净赚100钻"
+             />
+             <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/zhuanpan_you" />
+                 <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+        android:background="@drawable/zhuanpan_zuo" />
+                 
+            <LinearLayout
+        android:id="@+id/zhuanpan_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/loading_bg"
+        android:gravity="center"
+         >
+
+        <ProgressBar
+            android:id="@+id/mysavepb"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/custom_progress_draw" />
+                   <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/mysavepb"
+                                    android:layout_marginTop="10dp"
+                                    android:src="@drawable/loading_text" />
+    </LinearLayout>         
+</RelativeLayout>

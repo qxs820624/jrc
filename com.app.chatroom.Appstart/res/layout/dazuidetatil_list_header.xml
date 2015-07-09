@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <com.duom.fjz.iteminfo.MarqueeTextView
+                android:id="@+id/dazuidetatil_title"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="大家来听一下。。"
+                android:textColor="#482c3f"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:textSize="19dp" />
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"               
+                >
+                <Button 
+                    android:layout_centerHorizontal="true"
+                 android:id="@+id/dazuidetatil_bf"
+                 android:layout_marginTop="10dp"
+                   android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:background="@drawable/dazuitetatil_bf1"
+                android:layout_height="wrap_content"
+                
+                    />
+             <ProgressBar
+            android:id="@+id/dazuidetatil_bfpro"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:focusable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/dazui_detatil_pb" 
+            
+            />
+             
+                                <Button 
+                 android:id="@+id/dazuidetatil_save"
+                 android:layout_marginTop="10dp"
+                 android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_toLeftOf="@+id/dazuidetatil_bf"
+                android:background="@drawable/dazuisave1"
+                android:layout_height="wrap_content"
+                 android:layout_marginRight="-5dp"
+                    />
+                                                <Button 
+                 android:id="@+id/dazuidetatil_xiazai"
+                 android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:background="@drawable/dazuifenxiang1"
+                 android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_toRightOf="@+id/dazuidetatil_bf"
+                    />
+                
+            </RelativeLayout>
+            
+                <LinearLayout
+        android:id="@+id/dazuidetatil_dazuill"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dazuidetatil_begintm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textColor="#482c3f"
+            android:text="00:00" />
+
+        <SeekBar
+            android:id="@+id/dazuidetatil_seekbar"
+            android:layout_gravity="center"            
+             android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:minHeight="5dp"
+            android:maxHeight="5dp"
+            android:thumbOffset="0dp"
+            android:progressDrawable="@drawable/seekbar_img"
+            android:thumb="@drawable/seekbar_thumb"
+            />
+
+        <TextView
+            android:id="@+id/dazuidetatil_endtm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textColor="#482c3f"
+            android:text="04:33" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_text_left"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="5.0dp"
+        android:layout_marginTop="5.0dp" >
+
+        <ImageView
+            android:id="@+id/iv_userhead_left"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:background="@drawable/photo"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_username_left"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_userhead_left"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="43dp"
+            android:singleLine="true"
+            android:text="123"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/facemask_text_left"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:background="@drawable/chat_head_border"
+            android:clickable="true"
+            android:src="@drawable/avatar_bg_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llMsgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/RelativeLayout1"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:id="@+id/relative_right_lll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tv_chatcontent_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chat_left_bg"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="left|center"
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="#0d3c52"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_private_icon_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/tv_chatcontent_left"
+                        android:src="@drawable/chat_private_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_sendtime_left"
+                    style="@style/chat_send_time_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="2.0dip"
+                    android:paddingRight="2.0dip"
+                    android:singleLine="true"
+                    android:text="12:00:01" />
+
+                <ImageView
+                    android:id="@+id/bt_texterror_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_sendtime_left"
+                    android:src="@drawable/ptt_error_button_selector"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

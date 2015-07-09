@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_list_bai" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/village_level_imageView"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"     
+             android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip" >
+
+            <ImageView
+                android:id="@+id/village_header_image"
+                android:layout_width="36.0dp"
+                android:layout_height="36.0dp"
+                android:src="@drawable/photo" />
+
+            <ImageView
+                android:id="@+id/facemask"
+                android:layout_width="36.0dp"
+                android:layout_height="36.0dp"
+                android:background="@drawable/chat_head_border"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llMsgText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_toRightOf="@id/RelativeLayout1" >
+
+            <ImageView
+                android:id="@+id/village_sex_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/man" />
+
+            <com.duom.fjz.iteminfo.MarqueeTextView
+                android:id="@+id/village_name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_toRightOf="@+id/village_sex_image"
+                marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="酷酷熊"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+           <LinearLayout 
+                android:id="@+id/liwu_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+                android:layout_alignLeft= "@+id/village_sex_image"
+                android:layout_below="@+id/village_name_textView"
+                android:orientation="horizontal"
+                 android:layout_marginTop="15dp"
+            >
+                                    <ImageView
+                android:id="@+id/imageviewliwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             
+              
+                android:background="@drawable/liwu"
+                android:textColor="#ff833a16"
+                android:textSize="14dp" />
+
+            <com.duom.fjz.iteminfo.MarqueeTextView
+                android:id="@+id/village_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"               
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="6879"
+                android:textColor="#0096b0"
+                android:layout_marginLeft="4dp"
+                android:textSize="14dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+                    <RelativeLayout
+                android:id="@+id/village_level_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                   android:visibility="gone"
+                android:background="@drawable/icon_bg_1" >
+
+                <TextView
+                    android:id="@+id/village_level_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="123"
+                       android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/village_level_imageView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/liwu2" >
+
+            </ImageView>
+                                        <TextView
+                android:id="@+id/village_no_TextView"
+                style="@style/chat_text_name_style"
+                android:layout_width="59dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+               android:layout_below="@+id/village_level_imageView2"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="14dp" />
+</RelativeLayout>

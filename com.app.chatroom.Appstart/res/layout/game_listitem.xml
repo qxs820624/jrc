@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/game_item_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+
+
+            <ImageView
+                android:id="@+id/game_item_iv1"
+                android:layout_width="80dp"
+                android:layout_centerHorizontal="true"
+                android:focusable="false"
+                android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/game_tv_left"
+            android:layout_width="80dp"
+             android:focusable="false"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/game_item_iv1"
+            android:layout_centerHorizontal="true"          
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textColor="#404040"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/game_leftbnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/game_tv_left"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/game_jinru1" />
+    </RelativeLayout>
+    <!-- 
+    <RelativeLayout
+        android:id="@+id/game_item_center"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/game_item_left"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/game_item_fl2"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/game_item_iv2"
+                android:layout_width="95dp"
+                android:layout_height="95dp" />
+
+            <ImageView
+                android:id="@+id/game_item_kuang2"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <com.duom.fjz.iteminfo.MarqueeTextView
+            android:id="@+id/game_tv_right"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/game_item_fl2"
+            android:layout_centerHorizontal="true"
+            marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:textColor="#774220"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/game_rightbnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/game_tv_right"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/game_xiazai1" />
+    </RelativeLayout>
+ -->
+</LinearLayout>

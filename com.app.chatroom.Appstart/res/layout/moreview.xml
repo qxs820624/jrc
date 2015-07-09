@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/moreview"
+        style="@style/webview_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/liebiaosort"
+        android:listSelector="@color/transparent"
+        android:scrollbarThumbVertical="@drawable/gun" >
+    </ListView>
+
+  
+    <LinearLayout
+       android:id="@+id/village_leftlist_progressbar_RelativeLayout0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading_bg"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/progressmoreview"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/custom_progress_draw" />
+           <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:src="@drawable/loading_text" />
+    </LinearLayout>
+    
+
+    <Button
+        android:id="@+id/fresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/fresh1"
+        android:visibility="gone" >
+    </Button>
+
+</RelativeLayout>

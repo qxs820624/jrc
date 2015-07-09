@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <RelativeLayout
+        android:id="@+id/call_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gameroom_top"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/call_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/gameroom_back1" >
+        </Button>
+       
+        <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentRight="true"     
+            >
+           <ImageView
+            android:id="@+id/call_jinbiiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"                   
+            android:background="@drawable/gameroom_back1" >
+        </ImageView>
+        <TextView 
+            android:id="@+id/call_tv"
+            android:text="1545"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/call_jinbiiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"     
+            />        
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView 
+         android:text="第一步：设置你的资料"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="28dp"
+            android:layout_toRightOf="@+id/call_jinbiiv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"  
+        />
+      <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="5dp"
+            >
+           <Button
+            android:id="@+id/call_iamboy"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"                   
+             >
+        </Button>
+        <Button 
+            android:id="@+id/call_iamgirl"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/call_iamboy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"     
+            />        
+        </LinearLayout>
+
+</LinearLayout>

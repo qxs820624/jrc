@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pic_right"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5.0dp" >
+
+        <com.app.chatroom.view.NetImageView
+            android:id="@+id/pic_header_right"
+            android:layout_width="36.0dp"
+            android:layout_height="36.0dp"
+            android:clickable="true"
+            android:src="@drawable/photo" />
+
+        <TextView
+            android:id="@+id/pic_username_right"
+            style="@style/chat_text_name_style"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pic_header_right"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="43dp"
+            android:singleLine="true"
+            android:text="123"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/facemask_pic_right"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:background="@drawable/chat_head_border"
+            android:clickable="true"
+            android:src="@drawable/avatar_bg_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rrMsgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="4.0dip"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/RelativeLayout1" >
+
+        <LinearLayout
+            android:id="@+id/relative_right_rrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ProgressBar
+                    android:id="@+id/send_pic_right_progressbar"
+                    style="@android:style/Widget.ProgressBar"
+                    android:layout_width="16.5dp"
+                    android:layout_height="16.5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminateDrawable="@drawable/progress_draw"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/bt_picerror_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:src="@drawable/ptt_error_button_selector"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_picsendtime_right"
+                    style="@style/chat_send_time_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="2.0dip"
+                    android:paddingRight="2.0dip"
+                    android:singleLine="true"
+                    android:text="12:12:02" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_pic_click_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_right_bg"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.app.chatroom.view.NetImageView
+                        android:id="@+id/sendImagePreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:focusable="true"
+                        android:maxHeight="80.0dip"
+                        android:maxWidth="80.0dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/defaultpic" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_right"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="7.0dip"
+                        android:layout_alignLeft="@id/sendImagePreview"
+                        android:layout_alignRight="@id/sendImagePreview"
+                        android:layout_below="@id/sendImagePreview"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="6.0dip"
+                        android:layout_marginRight="6.0dip"
+                        android:layout_marginTop="-14.0dip"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/pic_content_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/sendImagePreview"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/sendImagePreview"
+                        android:background="@drawable/pic_content_yellow_bg"
+                        android:maxHeight="90.0dip"
+                        android:maxWidth="120.0dip" />
+
+                    <ImageView
+                        android:id="@+id/pic_private_icon_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/sendImagePreview"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/chat_private_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

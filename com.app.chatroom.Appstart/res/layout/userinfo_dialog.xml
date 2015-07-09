@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="518dp"
+        android:background="@drawable/chatroom_userinfo_bg" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <com.app.chatroom.view.NetImageView
+                android:id="@+id/chatroom_userinfo_photo"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/photo" />
+
+            <ImageButton
+                android:id="@+id/info_photo_bg_ImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/userinfo_photo_bg_normal" />
+        </RelativeLayout>
+ 
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayout1"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/chatroom_userinfo_bg2" >
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/userinfo_nick" />
+
+            <TextView
+                android:id="@+id/chatroom_userinfonick_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/imageView5"
+                android:ems="10"
+                android:singleLine="true"
+                android:textColor="#561f1d"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView5"
+                android:layout_below="@id/chatroom_userinfonick_TextView"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/userinfo_sign" />
+
+            <TextView
+                android:id="@+id/chatroom_userinfosign_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/chatroom_userinfonick_TextView"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/imageView6"
+                android:ems="10"
+                android:gravity="top"
+                android:lines="2"
+                android:maxLines="2"
+                android:scrollbars="none"
+                android:singleLine="false"
+                android:textColor="#561f1d"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView6"
+                android:layout_below="@id/chatroom_userinfosign_TextView"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/userinfo_sex" />
+
+            <ImageView
+                android:id="@+id/chatroom_userinfosex_ImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chatroom_userinfosign_TextView"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/imageView7"
+                android:src="@drawable/sextou" />
+
+            <ImageView
+                android:id="@+id/imageView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView7"
+                android:layout_below="@id/chatroom_userinfosex_ImageView"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/userinfo_citytext" />
+
+            <TextView
+                android:id="@+id/chatroom_userinfocity_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/chatroom_userinfosex_ImageView"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/imageView55"
+                android:ems="10"
+                android:singleLine="true"
+                android:textColor="#561f1d"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView55"
+                android:layout_below="@id/chatroom_userinfocity_TextView"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/userinfo_birthdaytext" />
+
+            <TextView
+                android:id="@+id/chatroom_userinfobirthday_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/chatroom_userinfocity_TextView"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/imageView55"
+                android:ems="10"
+                android:singleLine="true"
+                android:textColor="#561f1d"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:id="@+id/onlineuserinfo_progressbar_RelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/loading_bg"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ProgressBar
+                        android:id="@+id/onlineuserinfo_progressbar"
+                        style="@android:style/Widget.ProgressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminateDrawable="@drawable/custom_progress_draw" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/loading_text" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/relativeLayout1"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/relativeLayout1"
+            android:src="@drawable/userinfo_id" />
+
+        <TextView
+            android:id="@+id/chatroom_userinfoid_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-3dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:singleLine="true"
+            android:textColor="#cf5d18"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_below="@+id/chatroom_userinfoid_TextView"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/userinfo_score" />
+
+        <com.duom.fjz.iteminfo.MarqueeTextView
+            android:id="@+id/chatroom_userinfoscore_TextView"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chatroom_userinfoid_TextView"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_marginTop="-3dp"
+            marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="#cf5d18"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_below="@+id/chatroom_userinfoscore_TextView"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/userinfo_level" />
+
+        <TextView
+            android:id="@+id/chatroom_userinfolevel_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chatroom_userinfoscore_TextView"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_marginTop="-3dp"
+            android:singleLine="true"
+            android:textColor="#cf5d18"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/userinfo_speakButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayout2"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/chatroom_userinfo_speak_btn" />
+
+        <Button
+            android:id="@+id/userinfo_closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userinfo_speakButton"
+            android:layout_alignBottom="@+id/userinfo_speakButton"
+            android:layout_alignRight="@+id/relativeLayout2"
+            android:background="@drawable/chatroom_userinfo_close_btn" />
+
+    </RelativeLayout>
+
+</LinearLayout>

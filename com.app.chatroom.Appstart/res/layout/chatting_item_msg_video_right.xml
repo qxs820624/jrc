@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_video_right"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <com.app.chatroom.view.NetImageView
+            android:id="@+id/iv_audioheader_right"
+            android:layout_width="36.0dp"
+            android:layout_height="36.0dp"
+            android:clickable="true"
+            android:src="@drawable/photo" />
+
+        <TextView
+            android:id="@+id/tv_audiousername_right"
+            style="@style/chat_text_name_style"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_audioheader_right"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="43dp"
+            android:singleLine="true"
+            android:text="123"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/facemask_audio_right"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:background="@drawable/chat_head_border"
+            android:clickable="true"
+            android:src="@drawable/avatar_bg_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/rrMsgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="4.0dip"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/RelativeLayout1" >
+
+        <LinearLayout
+            android:id="@+id/relative_right_rrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/left_video_progerssbar_RelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ProgressBar
+                    android:id="@+id/send_video_right_progressbar"
+                    style="@android:style/Widget.ProgressBar"
+                    android:layout_width="16.5dp"
+                    android:layout_height="16.5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminateDrawable="@drawable/progress_draw"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/bt_videoerror_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:src="@drawable/ptt_error_button_selector"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_videosendtime_right"
+                    style="@style/chat_send_time_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="2.0dip"
+                    android:paddingRight="2.0dip"
+                    android:singleLine="true"
+                    android:text="12:12:02" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/bt_videoplay_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_right_video_bg"
+                    android:clickable="true"
+                    android:focusable="true" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/bt_videoplay_right"
+                        android:gravity="center_vertical"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp" >
+
+                            <TextView
+                                android:id="@+id/tv_video_right_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="5″"
+                                android:textColor="#8c8c8c" />
+
+                            <ImageView
+                                android:id="@+id/iv_video_right_anim"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_toRightOf="@+id/tv_video_right_time"
+                                android:scaleType="center"
+                                android:src="@anim/right_video_anim" />
+
+                            <ImageView
+                                android:id="@+id/iv_video_right_anim_static"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_toRightOf="@+id/tv_video_right_time"
+                                android:scaleType="center"
+                                android:src="@drawable/right_3"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ly_audio_LinearLayout_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:text="对"
+                                android:textColor="#c0390f"
+                                android:textSize="15dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/tv_audio_touser_right"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"
+                                    android:lines="1"
+                                    android:singleLine="true"
+                                    android:text="【"
+                                    android:textColor="#0062bd"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:text="】"
+                                android:textColor="#0062bd"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:text="说"
+                                android:textColor="#c0390f"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_video_private_icon_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/bt_videoplay_right"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/chat_private_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

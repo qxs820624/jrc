@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+ <RelativeLayout       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      >
+    <RelativeLayout
+        android:id="@+id/bp_rl"        
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bp_biankuang"
+        android:gravity="center_horizontal" >
+         
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="67dp"
+            android:layout_above="@+id/bp_ll"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/bp_dj"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+     
+
+        <RelativeLayout
+            android:id="@+id/bp_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="7dp" >
+
+            <ImageButton
+                android:id="@+id/bp_sure"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/bp_shiyong1" />
+
+            <ImageButton
+                android:id="@+id/bp_cancle"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/bp_chushou1" />
+        </RelativeLayout>
+        
+        <ImageView 
+             android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bp_kong"
+                android:id="@+id/bp_kongiv"
+                android:visibility="gone"
+            />
+    </RelativeLayout>
+     <ImageView
+            android:id="@+id/bp_tag_useing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bp_rl"
+            android:layout_alignRight="@+id/bp_rl"
+            android:background="@drawable/bp_shiyongzhong" />
+     
+        <Button
+            android:id="@+id/bp_tag_qipao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bp_rl"
+            android:layout_alignLeft="@+id/bp_rl"
+            android:textColor="#ffffff"
+            android:textSize="11dp"
+            android:background="@drawable/bp_qipao" />
+ </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout android:layout_marginTop="10dp"
+		android:orientation="horizontal" android:layout_centerHorizontal="true"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="已有  "
+			android:textSize="17dp" android:textColor="#482c3f" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="0"
+			android:textSize="16dp" android:id="@+id/numofsave"
+			android:textColor="#dc4532" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text=" 名贱友收藏此文章"
+			android:textSize="17dp" android:textColor="#482c3f" />
+	</LinearLayout>
+
+ <LinearLayout 
+         android:layout_below="@+id/linearLayout1" android:paddingBottom="15dp"
+		android:orientation="horizontal" android:layout_centerHorizontal="true"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/linearLayout2"
+ >
+  <LinearLayout   android:layout_weight="1" android:gravity="center_horizontal"
+		android:orientation="horizontal" android:layout_centerHorizontal="true"  
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+ >
+		<Button android:id="@+id/zhichibnt" android:layout_height="wrap_content"
+	android:text="2" android:layout_width="wrap_content"
+	android:layout_marginTop="8dp"  
+	android:background="@drawable/dingyixia1" android:textColor="#ffffff"
+   ></Button>
+		
+		</LinearLayout>
+		 <LinearLayout 
+   android:layout_weight="1"  android:gravity="center_horizontal"
+		android:orientation="horizontal" android:layout_centerHorizontal="true"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+ >
+
+   <Button android:layout_width="wrap_content" android:id="@+id/fanduibnt"
+		 android:layout_height="wrap_content"  android:textColor="#ffffff"
+		android:background="@drawable/caiyixia1"   
+		android:layout_marginTop="8dp"></Button>
+   </LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

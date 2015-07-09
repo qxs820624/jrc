@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photoview_rl"
+    android:layout_width="fill_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+     android:background="@drawable/photoview_k1"
+     android:layout_height="fill_parent"
+ >
+
+  <ImageView
+  android:id="@+id/photoview_iv"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:focusable="false"
+  android:clickable="false"
+  android:scaleType="centerCrop"
+  /> 
+    <ImageView
+        android:id="@+id/photoview_k"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:focusable="true"
+  android:clickable="true"
+  android:scaleType="fitXY"
+  android:src="@drawable/bantouming1"
+  /> 
+
+</RelativeLayout>

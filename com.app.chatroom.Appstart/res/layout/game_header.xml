@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/gr_paihang_header_relativell"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/iv_bj"
+        android:orientation="vertical" >
+
+
+        <ImageView
+            android:id="@+id/gr_paihang_header_header"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:focusable="false" />
+
+        <LinearLayout
+            android:id="@+id/game_paihang_header_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/gr_paihang_header_header"
+            android:orientation="vertical" >
+
+            <com.duom.fjz.iteminfo.MarqueeTextView
+                android:id="@+id/gr_paihang_header_gname"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:text="消流弊"
+                android:textColor="#213642"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/gr_paihang_header_desc1"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="你共有4个好友在玩"
+                android:layout_marginTop="5dp"
+                android:textColor="#606060"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_bj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/gameroom_youjiantou" />
+
+</RelativeLayout>

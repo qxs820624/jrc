@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/gr_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gameroom_top"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/gr_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/gameroom_back1" >
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/gameroom_logo" >
+        </TextView>
+        
+                <Button
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/gameroom_back1" >
+        </Button>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gr_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/gr_top"
+        android:background="@drawable/gameroom_bottom"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/gr_gv_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/hsll"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:spacing="10dp" >
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <GridView
+                            android:id="@+id/gr_gv"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            
+                            android:horizontalSpacing="15dp" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/hsll"
+                android:layout_alignParentLeft="true"
+               
+                android:layout_alignTop="@+id/hsll"
+                android:background="@drawable/game_room_left" />
+
+            <Button
+                android:id="@+id/gr_left_bnt"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:background="@drawable/gameroom_zuojiantou"
+                 />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/hsll"
+                android:layout_alignParentRight="true"
+               
+                android:layout_alignTop="@+id/hsll"
+                android:background="@drawable/game_room_right" />
+
+            <Button
+                android:id="@+id/gr_right_bnt"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/gameroom_youjiantou"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <com.duom.fjz.iteminfo.MarqueeTextView
+                android:id="@+id/gr_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="3dp"
+                marqueeRepeatLimit="marquee_forever"
+                android:background="@drawable/game_paihangbang_titlebg"
+                android:ellipsize="marquee"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:textColor="#3d263f"
+                android:textSize="17dp"
+                android:visibility="gone" />
+            <RelativeLayout 
+                android:id="@+id/gr_change_rl"
+                 android:background="@drawable/game_shuaxin1"
+                   android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/huanyipi"
+                />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/gr_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/liebiaosort"
+            android:fastScrollEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/custom_progress_draw" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mysavepb"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/loading_text" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainweixin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:keepScreenOn="true" >
+
+    <LinearLayout
+        android:id="@+id/dazuihengtiao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dztop"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/dazuitop"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tabbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dazuihengtiao"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/dazuicenter"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/sort"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:paddingBottom="2dp" >
+
+            <Button
+                android:id="@+id/dazuione"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/dz_zuo1"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="#544029"
+                android:textSize="17dp" >
+            </Button>
+
+            <Button
+                android:id="@+id/dazuitwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dz_zhong1"
+                android:clickable="true"
+                android:gravity="center"
+                android:scaleType="matrix"
+                android:textColor="#544029"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/dazuithree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dz_zhong1"
+                android:clickable="true"
+                android:gravity="center"
+                android:scaleType="matrix"
+                android:textColor="#544029"
+                android:textSize="17dp" />
+                            <Button
+                android:id="@+id/dazuifour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dz_zhong1"
+                android:clickable="true"
+                android:gravity="center"
+                android:scaleType="matrix"
+                android:textColor="#544029"
+                android:textSize="17dp" />
+                            <Button
+                android:id="@+id/dazuifive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dz_you1"
+                android:clickable="true"
+                android:gravity="center"
+                android:scaleType="matrix"
+                android:textColor="#544029"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tabpag"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tabbar"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/dazuidibu" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/dazuitabpager"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabbar"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/shangdz" >
+    </ImageButton>
+    
+        <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignBottom="@+id/tabpag"
+        android:background="@drawable/xiadz" >
+    </ImageButton>
+
+    <RelativeLayout
+        android:id="@+id/dztop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/dazuiback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/mainback1"
+            android:onClick="dazui_back" >
+        </Button>
+
+        <Button
+            android:id="@+id/dazuisort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/sort1"
+            android:onClick="dazui_sort" >
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dazuilogo" >
+        </TextView>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressmore"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tabpag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="139dp"
+        android:indeterminateDrawable="@drawable/wait"
+        android:visibility="gone" >
+    </ProgressBar>
+
+    <Button
+        android:id="@+id/fresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tabpag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118dp"
+        android:background="@drawable/dazuifresh1"
+        android:visibility="gone" >
+    </Button>
+
+    <Button
+        android:id="@+id/dz_sy_zhutis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tabpag"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:background="@drawable/dz_sy_zhutis1" />
+
+</RelativeLayout>

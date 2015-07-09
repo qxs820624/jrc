@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Untitled</title>
+<!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="zhijuan_edgePreload.js"></script>
+    <style>
+        .edgeLoad-EDGE-4191738 { visibility:hidden; }
+    </style>
+<!--Adobe Edge Runtime End-->
+<script type="text/javascript">
+	window.AdobeEdge.bootstrapCallback(function(compId) {
+		//
+		var comp = window.AdobeEdge.getComposition(compId);
+		var stage = comp.getStage();
+		$(stage.lookupSelector("symbol_content")).html("<span></span>");
+		//
+		AdobeEdge.Symbol.bindTimelineAction(compId, "stage", "Default Timeline", "complete", function(sym, e) { 
+			$(stage.lookupSelector("symbol_content")).html("<span><br/><br/><img src='images/loading_2.gif' width='100px' height='17px' border='0px'/></span>");
+			$.getJSON("http://www.duome.cn/client/zhijuan/zhijuan.php?jsoncallback=?",{uid:222},function(json) {
+				var content= decodeURIComponent((json[0].msg).replace(/\+/g,'%20'));
+				$(stage.lookupSelector("symbol_content")).html(content);
+				document.getElementById("msg").style.display="block";
+			});
+		});
+	});
+</script>
+</head>
+<body style="height:100%;">
+	<div id="Stage" class="EDGE-4191738" style="position:absolute;top:-50px;bottom:0;left:0;right:0;margin:auto;"></div>
+</body>
+</html>

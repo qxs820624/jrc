@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pic_left"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5.0dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/pic_header_left"
+            android:layout_width="36.0dp"
+            android:layout_height="36.0dp"
+            android:background="@drawable/photo"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/pic_username_left"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pic_header_left"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="43dp"
+            android:singleLine="true"
+            android:text="123"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/facemask_pic_left"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:background="@drawable/chat_head_border"
+            android:clickable="true"
+            android:src="@drawable/avatar_bg_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llMsgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/RelativeLayout1" >
+
+        <LinearLayout
+            android:id="@+id/relative_right_lll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linear_pic_click_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_left_bg"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.app.chatroom.view.NetImageView
+                        android:id="@+id/receiveImagePreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:focusable="true"
+                        android:maxHeight="90.0dip"
+                        android:maxWidth="120.0dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/defaultpic" />
+
+                    <com.app.chatroom.view.NetImageView
+                        android:id="@+id/receiveNoImagePreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:focusable="true"
+                        android:maxHeight="90.0dip"
+                        android:maxWidth="120.0dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/defaultpic"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_left"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="7.0dip"
+                        android:layout_alignLeft="@id/receiveImagePreview"
+                        android:layout_alignRight="@id/receiveImagePreview"
+                        android:layout_below="@id/receiveImagePreview"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="6.0dip"
+                        android:layout_marginRight="6.0dip"
+                        android:layout_marginTop="-14.0dip"
+                        android:max="100"
+                        android:progress="0"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/pic_content_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/receiveImagePreview"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/receiveImagePreview"
+                        android:background="@drawable/pic_content_lan_bg"
+                        android:maxHeight="80.0dip"
+                        android:maxWidth="80.0dip" />
+
+                    <ImageView
+                        android:id="@+id/pic_private_icon_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/receiveImagePreview"
+                        android:src="@drawable/chat_private_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_picsendtime_left"
+                style="@style/chat_send_time_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="2.0dip"
+                android:paddingRight="2.0dip"
+                android:singleLine="true"
+                android:text="12:00:01" />
+            <!-- </RelativeLayout> -->
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

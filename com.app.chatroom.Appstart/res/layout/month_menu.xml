@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/exit_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/chatroom_userinfo_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/month_menu_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="温馨提示"
+                android:textColor="#8C4422"
+                android:textSize="28dp" />
+
+            <View
+                android:id="@+id/fen_view1"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/chatroom_userinfo_topline" />
+
+            <Button
+                android:id="@+id/month_menu_ok_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/item_list_orange"
+                android:gravity="center"
+                android:text="订购包月包"
+                android:textColor="#8C4422"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/fen_view2"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/chatroom_userinfo_topline" />
+
+            <Button
+                android:id="@+id/month_menu_info_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/item_list_orange"
+                android:gravity="center"
+                android:text="订购资费详情"
+                android:textColor="#8C4422"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/fen_view3"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/chatroom_userinfo_topline" />
+
+            <Button
+                android:id="@+id/month_menu_cancel_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/item_list_orange"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#8C4422"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

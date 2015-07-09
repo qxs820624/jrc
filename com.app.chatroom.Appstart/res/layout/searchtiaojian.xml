@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chatroom_userinfo_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tj_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+                    android:textColor="#521502"
+            android:textSize="15dp"
+        android:text="性别筛选" />
+
+    <LinearLayout
+        android:id="@+id/tj_ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+        android:layout_below="@+id/tj_tv1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/tj_xingbie_all"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:text="全部"
+            android:textColor="#ffffff"
+            android:background="@drawable/tj_leftpre"
+            android:layout_height="wrap_content" />
+                <Button
+            android:id="@+id/tj_xingbie_boy"
+            android:layout_weight="1"
+            android:text="  男  "
+            android:textColor="#000000"
+            android:background="@drawable/tj_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+                        <Button
+            android:id="@+id/tj_xingbie_gril"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:text="  女  "
+            android:background="@drawable/tj_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+        <TextView
+        android:id="@+id/tj_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tj_ll1"
+                    android:textColor="#521502"
+            android:textSize="15dp"
+         android:layout_marginTop="5dp"
+        android:text="出现时间筛选" />
+
+    <LinearLayout
+         android:id="@+id/tj_ll2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tj_tv2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/tj_zaixian_one"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:text="一小时"
+              android:textColor="#ffffff"
+            android:background="@drawable/tj_leftpre"
+            android:layout_height="wrap_content" />
+                <Button
+            android:id="@+id/tj_zaixian_three"
+            android:layout_weight="1"
+            android:text="  1天  "
+            android:background="@drawable/tj_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+                        <Button
+            android:id="@+id/tj_zaixian_day"
+            android:layout_weight="1"
+            android:text="  3天  "
+            android:background="@drawable/tj_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <TextView 
+         android:id="@+id/tj_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+        android:layout_below="@+id/tj_ll2"
+                    android:textColor="#521502"
+            android:textSize="15dp"
+        android:text="年龄筛选"
+        />
+     <LinearLayout
+         android:id="@+id/tj_ll3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tj_tv3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:visibility="gone"
+         android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/tj_age"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="年龄"
+            android:background="@drawable/search_tiaojian1"
+            android:layout_height="wrap_content" />
+                <Button
+            android:id="@+id/tj_city"
+            android:layout_weight="1"
+            android:background="@drawable/search_tiaojian1"
+             android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="城市"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+       <LinearLayout
+         android:id="@+id/tj_ll3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tj_tv3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/tj_age_all"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:text="全部"
+              android:textColor="#ffffff"
+            android:background="@drawable/tj_leftpre"
+            android:layout_height="wrap_content" />
+                <Button
+            android:id="@+id/tj_age_one"
+            android:layout_weight="1"
+            android:text="  16以下  "
+            android:background="@drawable/tj_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+                        <Button
+            android:id="@+id/tj_age_two"
+            android:layout_weight="1"
+            android:text="  16-22  "
+            android:background="@drawable/sf_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+                                                <Button
+            android:id="@+id/tj_age_three"
+            android:layout_weight="1"
+            android:text="  22以上"
+            android:background="@drawable/tj_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+     <Button
+          android:layout_marginTop="10dp"
+         android:id="@+id/tj_search_bnt"
+         android:layout_width="wrap_content"
+         android:background="@drawable/sf_dibusousuo1"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="20dp"
+         android:layout_below="@+id/tj_ll3"
+         android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

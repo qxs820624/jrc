@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_list_orange"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/village_dialog_liwu_item_logo_imageView"
+            android:layout_width="100.0dip"
+            android:layout_height="77.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/liwupic" />
+
+        <RelativeLayout
+            android:id="@+id/llMsgText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/village_dialog_liwu_item_logo_imageView"
+            android:layout_alignRight="@+id/village_dialog_liwu_item_logo_imageView"
+            android:layout_below="@+id/village_dialog_liwu_item_logo_imageView"
+            android:layout_marginTop="1dp" >
+
+            <com.duom.fjz.iteminfo.MarqueeTextView
+                android:id="@+id/village_dialog_liwu_item_name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="玫瑰花"
+                android:textColor="#833a16"
+                android:textSize="14.0dip" />
+
+            <com.duom.fjz.iteminfo.MarqueeTextView
+                android:id="@+id/village_dialog_liwu_item_price_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/village_dialog_liwu_item_name_textView"
+                android:layout_marginTop="2dp"
+                marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="10"
+                android:textColor="#833a16"
+                android:textSize="14.0dip" />
+
+            <ImageButton
+                android:id="@+id/village_dialog_liwu_item_give_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/village_dialog_liwu_item_price_textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/chatroom_userinfo_dialog_songtaliwu_btn" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

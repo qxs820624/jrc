@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/village_dialog_bg"
+    android:clickable="false"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8.0dip" >
+
+            <ImageView
+                android:id="@+id/village_myliwu_items_header_image"
+                android:layout_width="36.0dip"
+                android:layout_height="36.0dip"
+                android:src="@drawable/photo" />
+
+            <ImageView
+                android:id="@+id/village_myliwu_items_facemask"
+                android:layout_width="36.0dip"
+                android:layout_height="36.0dip"
+                android:background="@drawable/chat_head_border_orange"
+                android:clickable="true"
+                android:src="@drawable/avatar_bg_orange_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llMsgText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="4.0dip"
+            android:layout_toRightOf="@id/RelativeLayout1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/village_myliwu_items_sex_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@+id/llMsgText"
+                android:src="@drawable/man" />
+
+            <com.duom.fjz.iteminfo.MarqueeTextView
+                android:id="@+id/village_myliwu_items_name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/village_myliwu_items_logo_imageView"
+                android:layout_toRightOf="@+id/village_myliwu_items_sex_image"
+                marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="酷酷熊"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <com.app.chatroom.view.NetImageView
+                android:id="@+id/village_myliwu_items_logo_imageView"
+                android:layout_width="64.0dip"
+                android:layout_height="48.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/liwupic" />
+
+            <com.duom.fjz.iteminfo.MarqueeTextView
+                android:id="@+id/village_myliwu_items_uid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/village_myliwu_items_name_textView"
+                android:layout_below="@+id/village_myliwu_items_name_textView"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/village_myliwu_items_logo_imageView"
+                marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="6879"
+                android:textColor="#833a16"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dialog_line" />
+
+</LinearLayout>

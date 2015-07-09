@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mydazui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dazuihengtiao3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dzdetatiltop"
+        android:layout_marginLeft="3dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/dazuitop" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dazuitabbar2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/dazuibottomll"
+        android:layout_below="@+id/dazuihengtiao3"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/dazuicenter"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/liebiaobg"
+            android:orientation="vertical"
+            android:paddingBottom="2dp" >
+
+            <ListView
+                android:id="@+id/dazuidetatil_lv"
+                style="@style/webview_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:focusable="true"
+               android:divider = "@color/white"
+                android:listSelector="@color/transparent"
+                android:scrollbarThumbVertical="@drawable/gun" >
+            </ListView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dazuidetatil_shafa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/llll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/shafa"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dazuitabbar2"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/dazuiyuanjiao" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/dazuibottomll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tabpag"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tabpag"
+        android:layout_marginBottom="3dp"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/dazuimianban"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/dazuidibu" >
+
+            <Button
+                android:id="@+id/dazuidetatil_wenzi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                    android:visibility="gone" 
+                android:background="@drawable/detatil_wenzi1" />
+
+            <Button
+                android:id="@+id/dazuidetatil_yuyin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+            
+                android:background="@drawable/detatil_yuyin1"
+                />
+
+            <EditText
+                android:id="@+id/dazuidetatil_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/dazuidetatil_fabiao"
+                android:layout_toRightOf="@+id/dazuidetatil_yuyin"
+                android:background="@drawable/shuruk1"
+                android:hint="亲，说点什么吧！"
+                android:singleLine="true"
+                android:textColor="#833a16"
+ 
+                android:textColorHint="#c5934c" />
+
+            <Button
+                android:id="@+id/dazuidetatil_anzhushuohua"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" 
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/dazuidetatil_fabiao"
+                android:layout_toRightOf="@+id/dazuidetatil_wenzi"
+                android:background="@drawable/detatil_anzhu1"
+                />
+
+            <Button
+                android:id="@+id/dazuidetatil_fabiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.01"
+                android:background="@drawable/fabiao1" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dzdetatiltop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/dazuidetatil_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/mainback1" >
+        </Button>
+
+        <TextView
+            android:id="@+id/dz_pinglun_huifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/myyuyinlogo" >
+        </TextView>
+        
+                <Button
+            android:id="@+id/dazuidetatil_shuaxin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sxbnt1" >
+        </Button>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dazui_detatil_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/dazui_detatil_pb"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/custom_progress_draw" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/loading_text" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dazui_speak_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading_bg"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/dazui_speak_LinerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/speak_phone_icon" />
+
+            <ImageView
+                android:id="@+id/dazui_speakvolume_ImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/audio_recorder_volume_8" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

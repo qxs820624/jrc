@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_menu_bg2" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/chooseid_left_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/title_userinfo_btn_left" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/chooseid_title" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/userinfo_bg" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.03" >
+
+            <RelativeLayout
+                android:id="@+id/onerl"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:padding="0.0dip" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1212"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/choose_one_title" />
+
+                        <EditText
+                            android:id="@+id/choosephone_EditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageView1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toLeftOf="@+id/phone_code_btn"
+                            android:background="@drawable/input_text2"
+                            android:ems="10"
+                            android:hint="请输入手机号码"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:textColor="#561f1d"
+                            android:textColorHint="#a08957"
+                            android:textSize="14dp" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/phone_code_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/choosephone_EditText"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/userinfo_code_bg" />
+
+                        <EditText
+                            android:id="@+id/chooseemail_EditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/choosephone_EditText"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toLeftOf="@+id/email_code_btn"
+                            android:background="@drawable/input_text2"
+                            android:ems="10"
+                            android:hint="请输入Email地址"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:textColor="#561f1d"
+                            android:textColorHint="#a08957"
+                            android:textSize="14dp" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/email_code_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/chooseemail_EditText"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/userinfo_code_bg" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/chooseemail_EditText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/choose_message" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/imageView1"
+                            android:layout_below="@+id/imageView2"
+                            android:layout_marginTop="22dp"
+                            android:src="@drawable/choose_two_title" />
+
+                        <EditText
+                            android:id="@+id/input_code_EditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageView3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/input_text2"
+                            android:ems="10"
+                            android:hint="请输入获取到的验证码"
+                            android:singleLine="true"
+                            android:textColor="#561f1d"
+                            android:textColorHint="#a08957"
+                            android:textSize="14dp" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/user_login_Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/input_code_EditText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/login_bg" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

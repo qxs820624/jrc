@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+     >
+
+    <RelativeLayout
+        android:id="@+id/tuijian_item_left"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+       >
+
+        <FrameLayout
+            android:id="@+id/tuijian_item_fl1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/tuijian_item_iv1"
+                android:layout_width="95dp"
+                android:layout_height="95dp" />     
+            <ImageView
+                android:id="@+id/tuijian_item_kuang1"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:scaleType="centerCrop" />
+                                        <ImageView
+                                android:id="@+id/tuijian_sex_left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|right"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:src="@drawable/touming"/>
+        </FrameLayout>
+        
+          <com.duom.fjz.iteminfo.MarqueeTextView
+               marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                    android:id="@+id/tv_left"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tuijian_item_fl1"
+                    android:gravity="center_horizontal"
+                    android:textColor="#774220"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                     />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tuijian_item_center"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tuijian_item_left"
+         >
+
+        <FrameLayout
+            android:id="@+id/tuijian_item_fl2"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/tuijian_item_iv2"
+                android:layout_width="95dp"
+                android:layout_height="95dp" />
+
+            <ImageView
+                android:id="@+id/tuijian_item_kuang2"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:scaleType="centerCrop" />
+                                                    <ImageView
+                                android:id="@+id/tuijian_sex_center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 android:layout_gravity="bottom|right"
+                                 android:layout_marginRight="15dp"
+                                 android:layout_marginBottom="15dp"
+                                android:src="@drawable/touming" />
+        </FrameLayout>
+                 <com.duom.fjz.iteminfo.MarqueeTextView
+                      marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                    android:id="@+id/tv_center"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                      android:layout_below="@+id/tuijian_item_fl2"
+                    android:gravity="center_horizontal"
+                                        android:textColor="#774220"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tuijian_item_right"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tuijian_item_center"
+         >
+
+        <FrameLayout
+            android:id="@+id/tuijian_item_fl3"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/tuijian_item_iv3"
+                android:layout_width="95dp"
+                android:layout_height="95dp" />
+
+            <ImageView
+                android:id="@+id/tuijian_item_kuang3"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:scaleType="centerCrop" />
+                                                    <ImageView
+                                android:id="@+id/tuijian_sex_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 android:layout_gravity="bottom|right"
+                                 android:layout_marginRight="15dp"
+                                 android:layout_marginBottom="15dp"
+                                android:src="@drawable/touming" />
+        </FrameLayout>
+        
+                   <com.duom.fjz.iteminfo.MarqueeTextView
+                        marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                    android:id="@+id/tv_right"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                      android:layout_below="@+id/tuijian_item_fl3"
+                    android:gravity="center_horizontal"
+                                        android:textColor="#774220"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_system_middle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <TextView
+            android:id="@+id/tv_chatsyscontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_chatsysicon"
+            android:clickable="true"
+            android:gravity="left"
+            android:lineSpacingExtra="2dp"
+            android:text="哈哈"
+            android:textColor="#9c0000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_chatsysicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:clickable="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

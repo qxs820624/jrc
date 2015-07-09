@@ -1,0 +1,502 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jianrencun.chatroom"
+    android:installLocation="auto"
+    android:versionCode="183"
+    android:versionName="1.8.3" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true" />
+
+    <application
+        android:name="com.app.chatroom.DmApplication"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/tubiao"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="youyi73" />
+        <meta-data
+            android:name="appid"
+            android:value="appid:008009432763556455" />
+        <meta-data
+            android:name="excode"
+            android:value="excode:0001" />
+
+        <activity
+            android:name="com.app.chatroom.Appstart"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.chatroom.MainMenuActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.ui.ChatRoomActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.ui.VillageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.ui.MailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.ui.MailContentActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.ui.UserInfoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.ui.ChooseIDActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.ui.GameActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.ui.PicHandleActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.imgzoom.ImageZoom"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.imgzoom.ImageZoom2"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.otherui.MainTopRightDialog"
+            android:theme="@style/MyDialogStyleTop" />
+        <activity
+            android:name="com.app.chatroom.otherui.UserInfoDialog"
+            android:theme="@style/MyDialogStyle3" />
+        <activity
+            android:name="com.app.chatroom.otherui.Message0Dialog"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.app.chatroom.otherui.Message1Dialog"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.app.chatroom.otherui.DeleteMailDialog"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.app.chatroom.otherui.MessageDownDialog"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.app.chatroom.otherui.MessageSystemDialog"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.app.chatroom.otherui.ExitDialog"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.app.chatroom.otherui.UpPhotoDialog"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.app.chatroom.otherui.VillageUserInfoDialog"
+            android:theme="@style/MyDialogStyle3" />
+        <activity
+            android:name="com.app.chatroom.otherui.SystemMsgWebDialog"
+            android:theme="@style/MyDialogStyle3" />
+        <activity
+            android:name="com.app.chatroom.otherui.SystemMsgWebPayDialog"
+            android:theme="@style/MyDialogStyle3" />
+        <activity
+            android:name="com.app.chatroom.ui.RoomListActivity"
+            android:theme="@style/MyDialogStyle3" />
+        <activity
+            android:name="com.app.chatroom.otherui.ChatToolsDialog"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.app.chatroom.otherui.FollowToolsDialog"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.app.chatroom.otherui.LiwuDialog"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.jianrencun.android.TopRight"
+            android:theme="@style/MyDialogStyleTop" />
+        <activity
+            android:name="com.jianrencun.android.JianrencunActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.jianrencun.android.Chakanpinglun"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.jianrencun.android.Details"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.jianrencun.android.Shangchuan"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.jianrencun.android.Mysave"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.jianrencun.android.Choosewhich"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.jianrencun.android.Exit"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.jianrencun.android.Sharechoose"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.jianrencun.android.Entrance"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.jianrencun.android.Savephoto"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.weibo.tencent.MainActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.weibo.tencent.WebViewActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.weibo.tencent.WeiBoActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.weibo.sina.AuthorizeActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.weibo.sina.ShareActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="cn.duome.imagezoom.ImageZoom"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jianrencun.dazui.DazuiActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jianrencun.dazui.Dazuidetatil"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jianrencun.dazui.Dzmysave"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jianrencun.dazui.Mydazui"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jianrencun.dazui.Luyindialog"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.jianrencun.dazui.Makesure"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.app.chatroom.MakesureClear"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.jianrencun.dazui.DztopRight"
+            android:theme="@style/MyDialogStyleTop" />
+        <activity
+            android:name="com.jianrencun.dazui.Dzzhutis"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyDialogStyle3" />
+        <activity
+            android:name="com.app.chatroom.otherui.AppalyJiazu"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyDialogStyle3" />
+        <activity
+            android:name="com.jianrencun.dazui.Dzhuifupinglun"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100387196" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.sharesdk.framework.AuthorizeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+
+            <!-- NoTitle表示不显示授权页面的标题 boolean值，为true表示不显示，否则为显示，默认为显示 -->
+            <!-- <meta-data android:name="NoTitle" android:value="true" /> -->
+        </activity>
+        <activity
+            android:name="cn.sharesdk.sina.weibo.SSOActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.sharesdk.onekeyshare.ShareAllGird"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="cn.sharesdk.onekeyshare.SharePage"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.jianrencun.dazui.Dztishidialog"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.jianrencun.android.Xjfabu"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.duom.fjz.iteminfo.WebviewDonghua"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="cn.aduu.android.floatad.AdSpotActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.duom.fjz.iteminfo.Backpacks"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.duom.fjz.iteminfo.BackpacksMakesure"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.app.chatroom.Tuhaobang"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyDialogStyle3" />
+        <activity
+            android:name="com.app.chatroom.SearchPeople"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyDialogStyle3" />
+        <activity
+            android:name="com.duom.fjz.iteminfo.Searchtiaojian"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.duom.fjz.iteminfo.SearchUptuijian"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.app.chatroom.DeleteOrBorwser"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.duom.fjz.iteminfo.Tixing"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyDialogStyle3" />
+        <activity
+            android:name="com.app.chatroom.Chakandatu"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyDialogStyle3" />
+        <activity
+            android:name="com.jianrencun.dynamic.Dynamic"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jianrencun.dynamic.Aboutme"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jianrencun.dynamic.Dydetatil"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jianrencun.game.Zhuanpan"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jianrencun.game.Zhuanpan_help"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.jianrencun.game.Paihangbang"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.jianrencun.game.Gameroom"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jianrencun.game.Gamedetatil"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jianrencun.game.ZhuanpanPhb"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.jianrencun.game.MakeSureDown"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.DuomeDialog" />
+        <activity
+            android:name="com.jianrencun.game.Huadongye"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyDialogStyle3" />
+        <activity
+            android:name="com.jianrencun.game.Call"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MyDialogStyle3" />
+
+        <!-- Caution! Do not change this app key. It is only for demo usage. -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="50e68d375270153b51000001" >
+        </meta-data>
+        <meta-data
+            android:name="jianrencun"
+            android:value="Jianrencun" >
+        </meta-data>
+        
+        
+        <!-- 咪咕音乐 -->
+
+        <activity android:name="com.cmsc.cmmusic.common.CMMusicActivity" />
+        <activity
+            android:name="com.app.chatroom.mgmusic.MgMusicActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.mgmusic.AllListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.mgmusic.MusicListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.mgmusic.MusicZjListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.mgmusic.MonthlyActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.mgmusic.PropActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.mgmusic.MgRadioActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.app.chatroom.mgmusic.MonthMenuActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.app.chatroom.mgmusic.MusicMenuActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name="com.app.chatroom.mgmusic.MusicPayDialog"
+            android:theme="@style/MyDialogStyle" />
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+</manifest>

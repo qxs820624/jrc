@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="wrap_content"
+	android:background="@drawable/duihuak" android:layout_height="wrap_content">
+	
+		<ImageView android:layout_height="wrap_content" android:id="@+id/image"
+		android:background="@drawable/wenxintishi" android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal"  android:layout_marginTop="20dp"
+		android:layout_alignParentTop="true" android:layout_centerHorizontal="true"></ImageView>
+		
+	<TextView android:layout_height="wrap_content" android:id="@+id/tvts"
+		android:layout_width="200dp" android:layout_below="@+id/image"
+		android:text="......" android:textSize="20dp"
+		 android:layout_centerHorizontal="true"
+		android:layout_marginTop="24dp"></TextView>
+
+	        	 <LinearLayout android:layout_height="wrap_content"
+	        	 android:layout_below="@+id/tvts"  android:layout_marginTop="24dp"
+	android:layout_width="wrap_content" 
+	>
+	<Button android:layout_marginRight="8dip" android:id="@+id/promptsure"
+		android:layout_gravity="center_vertical" android:background="@drawable/surebnt"
+		android:layout_width="88dp" android:layout_marginLeft="8dip"
+		android:layout_height="wrap_content"></Button>
+	<Button android:layout_marginRight="8dip" android:id="@+id/promptcancle"
+		android:layout_gravity="center_vertical|right" android:background="@drawable/guanbi1"
+		android:layout_width="83dp" android:layout_marginLeft="8dip"
+		android:layout_height="wrap_content"></Button>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/rl_video_left"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="5.0dp"
+        android:layout_marginTop="5.0dp" >
+
+        <ImageView
+            android:id="@+id/iv_audioheader_left"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:clickable="true"
+            android:src="@drawable/photo" />
+
+        <TextView
+            android:id="@+id/tv_audiousername_left"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_audioheader_left"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="43dp"
+            android:singleLine="true"
+            android:text="123"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/facemask_audio_left"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:background="@drawable/chat_head_border"
+            android:clickable="true"
+            android:src="@drawable/avatar_bg_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llMsgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/RelativeLayout1"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:id="@+id/relative_right_lll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/bt_videoplay_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_left_video_bg"
+                    android:clickable="true"
+                    android:focusable="true" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:visibility="visible" >
+
+                        <LinearLayout
+                            android:id="@+id/ly_audio_LinearLayout_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:visibility="visible" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:text="对"
+                                android:textColor="#c0390f"
+                                android:textSize="15dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/tv_audio_touser_left"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"
+                                    android:lines="1"
+                                    android:singleLine="true"
+                                    android:text="【"
+                                    android:textColor="#0062bd"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:text="】"
+                                android:textColor="#0062bd"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:text="说"
+                                android:textColor="#c0390f"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center" >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center" >
+
+                                <ImageView
+                                    android:id="@+id/iv_video_left_anim"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:scaleType="center"
+                                    android:src="@anim/left_video_anim" />
+
+                                <ImageView
+                                    android:id="@+id/iv_video_left_anim_static"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:scaleType="center"
+                                    android:src="@drawable/left_3"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tv_video_left_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:lines="1"
+                                android:text="5″"
+                                android:textColor="#8c8c8c" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_video_private_icon_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/bt_videoplay_left"
+                    android:src="@drawable/chat_private_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_videosendtime_left"
+                    style="@style/chat_send_time_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="2.0dip"
+                    android:paddingRight="2.0dip"
+                    android:singleLine="true"
+                    android:text="12:00:01" />
+
+                <ImageView
+                    android:id="@+id/bt_videoerror_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_videosendtime_left"
+                    android:src="@drawable/ptt_error_button_selector"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/left_video_progerssbar_RelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ProgressBar
+                    android:id="@+id/load_audio_left_progressbar"
+                    style="@android:style/Widget.ProgressBar"
+                    android:layout_width="16.5dp"
+                    android:layout_height="16.5dp"
+                    android:indeterminateDrawable="@drawable/progress_draw"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

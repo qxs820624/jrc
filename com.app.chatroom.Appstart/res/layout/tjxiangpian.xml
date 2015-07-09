@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:id="@+id/llsciv"
+  android:gravity="center"
+  android:layout_width="107.3333dp"
+  android:layout_height="110dp">
+  <ImageView 
+  android:id="@+id/sciv"
+  android:layout_width="109.33dp"
+  android:layout_height="111.33dp"
+  android:scaleType="centerCrop"
+  /> 
+    <ImageView 
+  android:src="@drawable/sctupian1"
+  android:layout_width="109.33dp"
+  android:layout_height="111.33dp"
+  android:scaleType="centerCrop"
+  /> 
+</FrameLayout>

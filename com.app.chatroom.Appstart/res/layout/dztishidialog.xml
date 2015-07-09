@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="255dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dztsrl"
+        android:layout_width="255dp"
+        android:layout_height="220dp"
+        android:background="@drawable/duihuak"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/dztsll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4c264b"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/wenxintishi"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp" >
+            </TextView>
+                        <TextView
+                android:id="@+id/dztscontent"
+                android:layout_width="205dp"
+                android:focusable="true"
+                android:maxLines="6"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:textColor="#4c264b"
+                android:text="正在录音！是否放弃并退出？"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:textSize="17dp" >
+            </TextView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/dztsll"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/dztssure"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/chakanguanbi"
+                android:layout_alignBottom="@+id/chakanguanbi"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/chakanguanbi"
+                android:background="@drawable/sure1" >
+            </Button>
+
+            <Button
+                android:id="@+id/dztsguanbi"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/guanbi1" >
+            </Button>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

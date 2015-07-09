@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="10dp"
+  android:layout_marginRight="10dp"
+    android:background="@drawable/duihuak"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/tit"
+        android:layout_centerHorizontal="true"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:background="@drawable/tishibt"
+         android:layout_marginTop="10dp"
+        />
+        <EditText
+        android:layout_below="@+id/tit"
+        android:id="@+id/dazuisctitle"
+        android:layout_centerHorizontal="true"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/myscbt1"
+         android:layout_marginTop="10dp"
+         android:lines="4"
+         android:textColor="#825444"
+         android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp" 
+          android:gravity="top"
+        />
+<LinearLayout 
+             android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+              android:layout_below="@+id/dazuisctitle"
+              android:layout_marginTop="20dp"
+              android:gravity="center"
+    >
+        <Button
+            android:id="@+id/dazuisurescbnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/surescbnt1" />
+                <Button
+            android:id="@+id/dazuicanclebnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/guanbi1" />
+  </LinearLayout>
+      <LinearLayout
+        android:id="@+id/dazui_scdia_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading_bg"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/dazui_scdia_pb"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/custom_progress_draw" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/loading_text" />
+    </LinearLayout>
+</RelativeLayout>

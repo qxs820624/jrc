@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chatroom_userinfo_bg"
+    android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/searchpeople_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/searchpeople_left_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/chatroom_userinfo_dialog_back_btn" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/jiantalogo" />
+            
+        </RelativeLayout>
+        
+            <ImageView
+        android:id="@+id/sp_xian"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchpeople_rl"
+        android:background="@drawable/systemwebline" />
+    <LinearLayout 
+        android:id="@+id/searchpeople_ll3"
+                android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+                android:layout_below="@+id/sp_xian"
+                android:layout_marginTop="3dp"
+        android:orientation="vertical"
+        >
+    <ListView
+        android:id="@+id/searchpeople_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+android:cacheColorHint="#00000000"
+        android:fastScrollEnabled="false"
+                 android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/searchpeoplell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/custom_progress_draw" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mysavepb"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/loading_text" />
+    </LinearLayout>
+
+</RelativeLayout>

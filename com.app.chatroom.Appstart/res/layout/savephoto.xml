@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:gravity="center_horizontal"
+    android:background="@drawable/duihuak"
+  android:layout_height="wrap_content">
+
+    <TextView 
+  android:layout_marginTop="10dp"
+  android:id="@+id/topsave"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_centerHorizontal="true"
+   android:background="@drawable/wenxintishi"
+  />
+   <TextView 
+   android:layout_width="wrap_content"
+   android:layout_marginTop="30dp"
+   android:layout_below="@+id/topsave"
+   android:layout_height="wrap_content"
+   android:id="@+id/tishi"
+   android:textSize="20dp"
+   android:text="你是要保存图片吗？"
+   android:layout_centerHorizontal="true"
+   android:textColor="#833a16"
+
+  />
+    <LinearLayout 
+     android:orientation="horizontal"
+     android:layout_height="wrap_content"   
+     android:layout_marginTop="30dp"
+     android:layout_below="@+id/tishi"
+     android:gravity="center_vertical" android:layout_width="wrap_content">
+    <Button 
+    android:id="@+id/savephoto"
+         android:layout_width="wrap_content"
+     android:layout_height="wrap_content" 
+     android:background="@drawable/surebnt"
+     android:layout_weight="1"
+    
+    />
+       <Button 
+     android:id="@+id/canclesave"  android:layout_weight="1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" 
+     android:background="@drawable/cancle1"
+     android:layout_marginLeft="10dp" 
+    />
+    </LinearLayout>
+</RelativeLayout>
