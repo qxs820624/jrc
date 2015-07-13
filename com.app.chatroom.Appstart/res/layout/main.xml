@@ -209,7 +209,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/logo" >
+            android:background="@drawable/logo_xiaojian" >
         </TextView>
     </RelativeLayout>
 
