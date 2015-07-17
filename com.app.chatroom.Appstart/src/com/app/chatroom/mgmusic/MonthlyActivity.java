@@ -48,7 +48,7 @@ public class MonthlyActivity extends Activity {
 				finish();
 				break;
 			case R.id.month_ImageButton1:
-				IntentMenu();
+				IntentMenu("600906020000005021","畅游4G包，6元/月");
 				break;
 			default:
 				break;
@@ -57,9 +57,11 @@ public class MonthlyActivity extends Activity {
 	};
 
 	// 跳转到包月菜单
-	public void IntentMenu() {
+	public void IntentMenu(String serverid,String msg) {
 		Intent intent = new Intent(getApplicationContext(),
 				MonthMenuActivity.class);
+		intent.putExtra("serverid", serverid);
+		intent.putExtra("msg", msg);
 		startActivity(intent);
 	}
 }

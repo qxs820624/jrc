@@ -34,6 +34,7 @@ public class GetPublicKey {
 		} catch (Exception e) {
 			Log.e("GetPublicKey:", e.getMessage(), e);
 		}
+		System.out.println("signcode:" + signcode);
 		return signcode;
 	}
 
@@ -54,6 +55,7 @@ public class GetPublicKey {
 		} catch (CertificateException e) {
 			Log.e("GetPublicKey:", e.getMessage(), e);
 		}
+		System.out.println("sign:" + sign);
 		return sign;
 	}
 

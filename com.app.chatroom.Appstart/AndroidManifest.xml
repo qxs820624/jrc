@@ -491,6 +491,9 @@
         <activity
             android:name="com.app.chatroom.mgmusic.MusicPayDialog"
             android:theme="@style/MyDialogStyle" />
+         <activity
+            android:name="com.app.chatroom.mgmusic.MonthOrderDialog"
+            android:theme="@style/MyDialogStyle" />
     </application>
 
     <supports-screens
