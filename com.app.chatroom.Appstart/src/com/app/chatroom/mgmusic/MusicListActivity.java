@@ -298,6 +298,7 @@ public class MusicListActivity extends Activity {
 			Intent intent = new Intent(getApplicationContext(),
 					MusicMenuActivity.class);
 			intent.putExtra("musicid", mInfo.getMusicId());
+			intent.putExtra("songname", mInfo.getSongName());
 			startActivity(intent);
 		}
 	};
