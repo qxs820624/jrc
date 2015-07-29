@@ -44,6 +44,7 @@ public class ConstantsJrc {
 	public static final String USERDZURL = "http://jrc.hutudan.com/music/list.php?flg=8";
 	public static final String URLQD = "http://jrc.hutudan.com/usercenter/get_package.php"; //签到
 	public static final String DYDETATIL = "http://jrc.hutudan.com/usercenter/related_item.php";
+	public static final String PAYURL = "http://jrc.hutudan.com/jrc/phone_pay_dw.php";
 	/** 进度条状态 **/
 	public static final int HANDLER_CANCEL_PROGRESS = 0;
 	public static final int HANDLER_SHOW_PROGRESS = 1;
