@@ -64,8 +64,10 @@ public class MonthOrderDialog extends Activity {
 							@Override
 							public void operationResult(Result arg0) {
 								// TODO Auto-generated method stub
-								Commond.showToast(getApplicationContext(),
-										arg0.getResMsg());
+								if (null != arg0) {
+									Commond.showToast(getApplicationContext(),
+											arg0.getResMsg());
+								}
 							}
 						});
 				finish();

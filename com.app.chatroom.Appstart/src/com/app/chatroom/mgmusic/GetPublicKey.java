@@ -14,6 +14,7 @@ import android.content.pm.Signature;
 import android.util.Log;
 
 import com.cmsc.cmmusic.init.GetAppInfo;
+import com.cmsc.cmmusic.init.GetAppInfoInterface;
 
 public class GetPublicKey {
 	/**
@@ -24,7 +25,8 @@ public class GetPublicKey {
 		String signcode = "";
 		try {
 			PackageInfo packageInfo = mContext.getPackageManager()
-					.getPackageInfo(GetAppInfo.getPackageName(mContext),
+					.getPackageInfo(
+							GetAppInfoInterface.getPackageName(mContext),
 							PackageManager.GET_SIGNATURES);
 			Signature[] signs = packageInfo.signatures;
 			Signature sign = signs[0];
