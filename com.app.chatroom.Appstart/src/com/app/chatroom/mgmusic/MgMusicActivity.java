@@ -1,14 +1,21 @@
 package com.app.chatroom.mgmusic;
 
+import java.util.Hashtable;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import com.app.chatroom.util.Commond;
+import com.cmsc.cmmusic.init.InitCmmInterface;
 import com.jianrencun.chatroom.R;
 
 /**
@@ -24,6 +31,8 @@ public class MgMusicActivity extends Activity {
 	LinearLayout group3;// 贱人电台
 	LinearLayout group4;// 贱曲包月
 	LinearLayout group5;// 贱币兑换
+	private UIHandler mUIHandler = new UIHandler();
+	Hashtable<String, String> initResult = new Hashtable<String, String>();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +41,11 @@ public class MgMusicActivity extends Activity {
 		setContentView(R.layout.activity_mgmusic_dialog);
 		initView();
 		initListener();
+		if (!InitCmmInterface.initCheck(getApplicationContext())) {
+			new Thread(new T1()).start();
+		} else {
+			Commond.showToast(getApplicationContext(), "已经成功初始化数据");
+		}
 
 	}
 
@@ -51,6 +65,40 @@ public class MgMusicActivity extends Activity {
 		group3.setOnClickListener(listener);
 		group4.setOnClickListener(listener);
 		group5.setOnClickListener(listener);
+	}
+
+	private class UIHandler extends Handler {
+		@Override
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+
+			switch (msg.what) {
+			case 0:
+				if (msg.obj == null) {
+					Commond.showToast(getApplicationContext(), "初始化失败");
+					return;
+				}
+				Commond.showToast(getApplicationContext(), initResult.get("0")
+						.toString());
+				break;
+			}
+		}
+	}
+
+	class T1 extends Thread {
+		@Override
+		public void run() {
+			super.run();
+			Looper.prepare();
+
+			initResult = InitCmmInterface.initCmmEnv(MgMusicActivity.this);
+			Message m = new Message();
+			m.what = 0;
+			m.obj = initResult;
+			mUIHandler.sendMessage(m);
+
+			Looper.loop();
+		}
 	}
 
 	OnClickListener listener = new OnClickListener() {
