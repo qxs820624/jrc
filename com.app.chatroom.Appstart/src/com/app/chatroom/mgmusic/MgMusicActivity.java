@@ -78,8 +78,11 @@ public class MgMusicActivity extends Activity {
 					Commond.showToast(getApplicationContext(), "初始化失败");
 					return;
 				}
-				Commond.showToast(getApplicationContext(), initResult.get("0")
-						.toString());
+				System.out.println(initResult);
+				if (null != initResult) {
+					Commond.showToast(getApplicationContext(),
+							initResult.get("desc").toString());
+				}
 				break;
 			}
 		}

@@ -13,13 +13,12 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.app.chatroom.contants.ConstantsJrc;
 import com.app.chatroom.download.DownFileForMigu;
 import com.app.chatroom.util.Commond;
 import com.cmsc.cmmusic.common.CMMusicCallback;
-import com.cmsc.cmmusic.common.FullSongManagerInterface;
+import com.cmsc.cmmusic.common.VibrateRingManagerInterface;
 import com.cmsc.cmmusic.common.data.DownloadResult;
 import com.jianrencun.chatroom.R;
 
@@ -91,7 +90,7 @@ public class MusicMenuActivity extends Activity {
 				startActivity(intent);
 				break;
 			case R.id.music_list_menu_sj_btn:
-				FullSongManagerInterface.getFullSongDownloadUrlByNet(
+				VibrateRingManagerInterface.queryVibrateRingDownloadUrlByNet(
 						MusicMenuActivity.this, musicId, false,
 						new CMMusicCallback<DownloadResult>() {
 							@Override
