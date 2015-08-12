@@ -180,28 +180,30 @@ public class PropActivity extends HttpBaseActivitytwo {
 						if (null != result) {
 							Commond.showToast(getApplicationContext(),
 									result.getResMsg());
-							String phone = PhoneInfo.getInstance(
-									getApplicationContext())
-									.getNativePhoneNumber();
-							// double rand = 89999999 * Math.random() +
-							// 10000000;
-							Random random = new Random();
-							int rand = 10000000 + random.nextInt(90000000);
-							if ("".equals(phone)) {
-								phone = "138" + rand;
-							}
-							String url = ConstantsJrc.PAYURL + "?" + "uid="
-									+ su.getUid() + "&num=" + coins + "&money="
-									+ paymoney + "&phone=" + phone;
-							System.out.println("url:" + url);
-							StringBuffer data = new StringBuffer();
-							// 请求网络验证登陆
-							HttpRequestTask request = new HttpRequestTask();
-							request.execute(url, data.toString());
+							
 						}
-
 					}
 				});
+		money();
+	}
+
+	public void money() {
+		String phone = PhoneInfo.getInstance(getApplicationContext())
+				.getNativePhoneNumber();
+		// double rand = 89999999 * Math.random() +
+		// 10000000;
+		Random random = new Random();
+		int rand = 10000000 + random.nextInt(90000000);
+		if ("".equals(phone)) {
+			phone = "138" + rand;
+		}
+		String url = ConstantsJrc.PAYURL + "?" + "uid=" + su.getUid() + "&num="
+				+ coins + "&money=" + paymoney + "&phone=" + phone;
+		System.out.println("url:" + url);
+		StringBuffer data = new StringBuffer();
+		// 请求网络验证登陆
+		HttpRequestTask request = new HttpRequestTask();
+		request.execute(url, data.toString());
 	}
 
 	@Override
