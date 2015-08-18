@@ -41,12 +41,14 @@ public class MgMusicActivity extends Activity {
 		setContentView(R.layout.activity_mgmusic_dialog);
 		initView();
 		initListener();
+ 
 		if (!InitCmmInterface.initCheck(getApplicationContext())) {
 			new Thread(new T1()).start();
 		} else {
 			Commond.showToast(getApplicationContext(), "已经成功初始化数据");
 		}
 
+ 
 	}
 
 	void initView() {

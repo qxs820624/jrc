@@ -32,6 +32,7 @@ public class MonthOrderDialog extends Activity {
 		Intent intent = getIntent();
 		serverid = intent.getStringExtra("serverid");
 		msg = intent.getStringExtra("msg");
+		System.out.println(serverid);
 		message1_context_TextView.setText(msg);
 	}
 
