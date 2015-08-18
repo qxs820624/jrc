@@ -37,7 +37,7 @@ public class MgRadioActivity extends HttpBaseActivitytwo {
 		initView();
 		initListener();
 		zjlist.clear();
-		String url = "http://366music.com/jme/jme.json";
+		String url = "http://366music.com/jme/jme2.json";
 		StringBuffer data = new StringBuffer();
 		// 请求网络验证登陆
 		HttpRequestTask request = new HttpRequestTask();

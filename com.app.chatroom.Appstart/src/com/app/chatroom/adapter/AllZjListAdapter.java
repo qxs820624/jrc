@@ -51,6 +51,7 @@ public class AllZjListAdapter extends BaseAdapter {
 		return position;
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
@@ -65,7 +66,7 @@ public class AllZjListAdapter extends BaseAdapter {
 		} else {
 			viewHolder = (ViewHolder2) convertView.getTag();
 		}
-		viewHolder.listTitleTextView.setText("专辑名："+ URLDecoder.decode(zjBean.getZJNAME()));
+		viewHolder.listTitleTextView.setText("歌曲名："+ URLDecoder.decode(zjBean.getZJNAME()));
 		return convertView;
 	}
 

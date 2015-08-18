@@ -68,8 +68,8 @@ public class MusicPayDialog extends Activity {
 				finish();
 				break;
 			case R.id.message1_ok_btn:
-				RingbackManagerInterface.buyRingbackByNet(MusicPayDialog.this,
-						musicId, true, new CMMusicCallback<Result>() {
+				RingbackManagerInterface.buyRingBack(MusicPayDialog.this,
+						musicId, new CMMusicCallback<Result>() {
 							@Override
 							public void operationResult(Result ret) {
 								if (null != ret) {

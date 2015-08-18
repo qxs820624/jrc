@@ -90,29 +90,32 @@ public class MusicMenuActivity extends Activity {
 				startActivity(intent);
 				break;
 			case R.id.music_list_menu_sj_btn:
-				VibrateRingManagerInterface.queryVibrateRingDownloadUrlByNet(
-						MusicMenuActivity.this, musicId, false,
+				VibrateRingManagerInterface.queryVibrateRingDownloadUrl(
+						MusicMenuActivity.this, musicId,
 						new CMMusicCallback<DownloadResult>() {
 							@Override
 							public void operationResult(
 									final DownloadResult downloadResult) {
 								if (null != downloadResult) {
-									Commond.showToast(getApplicationContext(),
-											downloadResult.getResMsg());
-									System.out.println(downloadResult
-											.getDownUrl());
-									Commond.showToast(getApplicationContext(),
-											"开始下载");
-									downFileRight.down(
-											downloadResult.getDownUrl(),
-											songName,
-											Environment
-													.getExternalStorageDirectory()
-													+ File.separator + "咪咕音乐",
-											ConstantsJrc.PROJECT_PATH + "咪咕音乐",
-											null);
+									if (null != downloadResult.getDownUrl()) {
+										Commond.showToast(
+												getApplicationContext(),
+												downloadResult.getResMsg());
+										System.out.println(downloadResult
+												.getDownUrl());
+										Commond.showToast(
+												getApplicationContext(), "开始下载");
+										downFileRight.down(
+												downloadResult.getDownUrl(),
+												songName,
+												Environment
+														.getExternalStorageDirectory()
+														+ File.separator
+														+ "咪咕音乐",
+												ConstantsJrc.PROJECT_PATH
+														+ "咪咕音乐", null);
+									}
 								}
-
 							}
 						});
 				finish();

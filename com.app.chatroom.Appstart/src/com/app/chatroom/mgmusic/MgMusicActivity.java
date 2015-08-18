@@ -41,7 +41,7 @@ public class MgMusicActivity extends Activity {
 		setContentView(R.layout.activity_mgmusic_dialog);
 		initView();
 		initListener();
- 
+		InitCmmInterface.initSDK(this);
 		if (!InitCmmInterface.initCheck(getApplicationContext())) {
 			new Thread(new T1()).start();
 		} else {

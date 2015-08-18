@@ -173,14 +173,14 @@ public class PropActivity extends HttpBaseActivitytwo {
 	 * @param serviceId
 	 */
 	public void prop(String serviceId) {
-		ExclusiveManagerInterface.exclusiveOnceByNet(getApplicationContext(),
+		ExclusiveManagerInterface.exclusiveOnce(getApplicationContext(),
 				serviceId, new CMMusicCallback<Result>() {
 					@Override
 					public void operationResult(Result result) {
 						if (null != result) {
 							Commond.showToast(getApplicationContext(),
 									result.getResMsg());
-							
+
 						}
 					}
 				});

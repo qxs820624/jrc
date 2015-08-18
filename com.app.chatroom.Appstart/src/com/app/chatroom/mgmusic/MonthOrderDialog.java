@@ -59,8 +59,8 @@ public class MonthOrderDialog extends Activity {
 				break;
 			case R.id.message1_ok_btn:
 
-				CPManagerInterface.openCPMonthByNet(getApplicationContext(),
-						serverid, false, new CMMusicCallback<Result>() {
+				CPManagerInterface.openCPMonth(getApplicationContext(),
+						serverid,new CMMusicCallback<Result>() {
 
 							@Override
 							public void operationResult(Result arg0) {

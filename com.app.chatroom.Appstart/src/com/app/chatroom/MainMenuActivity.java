@@ -82,6 +82,7 @@ import com.app.chatroom.util.Commond;
 import com.app.chatroom.util.PhoneInfo;
 import com.app.chatroom.util.SystemUtil;
 import com.app.chatroom.view.HomeView;
+import com.cmsc.cmmusic.init.InitCmmInterface;
 import com.duom.fjz.iteminfo.BitmapCache2;
 import com.duom.fjz.iteminfo.Iteminfo;
 import com.duom.fjz.iteminfo.Tixing;
@@ -2674,6 +2675,7 @@ public class MainMenuActivity extends Activity {
 				su.setMainPd("");
 				SystemUtil.params.clear();
 				SystemUtil.params = null;
+				InitCmmInterface.exitApp();
 				// 完全退出，无残留
 				Intent startMain = new Intent(Intent.ACTION_MAIN);
 				startMain.addCategory(Intent.CATEGORY_HOME);

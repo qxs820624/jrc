@@ -1,4 +1,4 @@
-package com.app.chatroom;
+package com.jianrencun.chatroom;
 
 import android.app.Application;
 
@@ -18,6 +18,11 @@ public class DmApplication extends Application {
 		instance = this;
 		// 初始化表情解析器（将文本解析为表情图标显示，如[微笑] 显示微笑图标）
 		SmileyParser.init(getBaseContext());
+		try {
+			System.loadLibrary("mgpbase");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void onExit() {
