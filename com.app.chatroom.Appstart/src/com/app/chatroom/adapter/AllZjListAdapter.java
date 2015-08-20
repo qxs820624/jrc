@@ -3,6 +3,7 @@ package com.app.chatroom.adapter;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -19,14 +20,13 @@ import com.jianrencun.chatroom.R;
 
 public class AllZjListAdapter extends BaseAdapter {
 	LayoutInflater li = null;
-	MgRadioActivity context;
+	Context context;
 	OnClickListener listener;
 	public ArrayList<ZjBean> list = new ArrayList<ZjBean>();
 
 	ListView lv;
 
-	public AllZjListAdapter(MgRadioActivity c, ArrayList<ZjBean> list,
-			ListView listview) {
+	public AllZjListAdapter(Context c, ArrayList<ZjBean> list, ListView listview) {
 		this.context = c;
 		this.list = list;
 		this.lv = listview;
@@ -66,7 +66,8 @@ public class AllZjListAdapter extends BaseAdapter {
 		} else {
 			viewHolder = (ViewHolder2) convertView.getTag();
 		}
-		viewHolder.listTitleTextView.setText("歌曲名："+ URLDecoder.decode(zjBean.getZJNAME()));
+		viewHolder.listTitleTextView.setText(URLDecoder.decode(zjBean
+				.getZJNAME()));
 		return convertView;
 	}
 

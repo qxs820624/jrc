@@ -129,7 +129,8 @@ public class MgMusicActivity extends Activity {
 				break;
 			case R.id.group3:
 				Intent intentgroup3 = new Intent(getApplicationContext(),
-						MgRadioActivity.class);
+						NewPlayListActivity.class);
+				intentgroup3.putExtra("url", "http://366music.com/jme/jme2.json");
 				startActivity(intentgroup3);
 				break;
 			case R.id.group4:

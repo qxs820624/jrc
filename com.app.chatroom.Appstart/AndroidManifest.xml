@@ -477,6 +477,12 @@
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" />
+          <activity
+            android:name="com.app.chatroom.mgmusic.NewPlayListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name="com.app.chatroom.mgmusic.MonthMenuActivity"
             android:configChanges="orientation|keyboardHidden|navigation"

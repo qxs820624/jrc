@@ -15,6 +15,7 @@ public class MonthMenuActivity extends Activity {
 	Button month_menu_ok_btn;
 	Button month_menu_info_btn;
 	String serverid = "";
+	String url = "";
 	String msg = "";
 
 	@Override
@@ -24,6 +25,7 @@ public class MonthMenuActivity extends Activity {
 		setContentView(R.layout.month_menu);
 		Intent intent = getIntent();
 		serverid = intent.getStringExtra("serverid");
+		url = intent.getStringExtra("url");
 		msg = intent.getStringExtra("msg");
 		initView();
 		initListener();
@@ -59,7 +61,10 @@ public class MonthMenuActivity extends Activity {
 				finish();
 				break;
 			case R.id.month_menu_info_btn:
-				Commond.showToast(getApplicationContext(), msg);
+				Intent intentgroup3 = new Intent(getApplicationContext(),
+						NewPlayListActivity.class);
+				intentgroup3.putExtra("url", url);
+				startActivity(intentgroup3);
 				break;
 			default:
 				break;
