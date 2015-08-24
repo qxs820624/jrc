@@ -43,7 +43,7 @@
             android:name="UMENG_CHANNEL"
             android:value="youyi73" />
         <meta-data
-            android:name="appid"
+            android:name="miguopen_appid"
             android:value="appid:008009432763556455" />
         <meta-data
             android:name="excode"
