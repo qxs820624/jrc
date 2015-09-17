@@ -102,64 +102,64 @@ public class PropActivity extends HttpBaseActivitytwo {
 			case R.id.ImageButton1:
 				coins = 100;
 				paymoney = 0.1f;
-				prop("600893Z01000100001");
+				prop("600855Z01000100001");
 				break;
 			case R.id.ImageButton2:
 				coins = 1000;
 				paymoney = 2.0f;
-				prop("600893Z01000100001");
+				prop("633539Z01000100001");
 				break;
 			case R.id.ImageButton3:
 				coins = 1500;
 				paymoney = 3.0f;
-				prop("600893Z01000100001");
+				prop("635736Z01000100001");
 				break;
 			case R.id.ImageButton4:
 				coins = 2000;
 				paymoney = 4.0f;
-				prop("600893Z01000100001");
+				prop("633886Z01000100001");
 				break;
 			case R.id.ImageButton5:
 				coins = 2500;
 				paymoney = 5.0f;
-				prop("600893Z01000100001");
+				prop("600813Z01000100001");
 				break;
 			case R.id.ImageButton6:
 				coins = 3000;
 				paymoney = 6.0f;
-				prop("600893Z01000100001");
+				prop("635736Z01000100002");
 				break;
 			case R.id.ImageButton7:
 				coins = 4000;
 				paymoney = 8.0f;
-				prop("600893Z01000100001");
+				prop("633539Z01000100002");
 				break;
 
 			case R.id.ImageButton8:
 				coins = 5000;
 				paymoney = 10.0f;
-				prop("600893Z01000100001");
+				prop("635736Z01000100003");
 				break;
 			case R.id.ImageButton9:
 				coins = 6000;
 				paymoney = 12.0f;
-				prop("600893Z01000100001");
+				prop("600855Z01000100002");
 				break;
 
 			case R.id.ImageButton10:
 				coins = 7500;
 				paymoney = 15.0f;
-				prop("600893Z01000100001");
+				prop("633886Z01000100002");
 				break;
 			case R.id.ImageButton11:
 				coins = 10000;
 				paymoney = 20.0f;
-				prop("600893Z01000100001");
+				prop("600813Z01000100002");
 				break;
 			case R.id.ImageButton12:
 				coins = 15000;
 				paymoney = 30.0f;
-				prop("600893Z01000100001");
+				prop("633886Z01000100003");
 				break;
 			default:
 				break;
