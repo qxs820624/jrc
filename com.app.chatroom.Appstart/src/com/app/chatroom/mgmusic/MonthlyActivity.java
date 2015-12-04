@@ -60,23 +60,23 @@ public class MonthlyActivity extends Activity {
 				finish();
 				break;
 			case R.id.month_ImageButton1:
-				IntentMenu("600966020000006608", "畅游4G包，6元/月",
+				IntentMenu("600967020000006608", "畅游4G包，6元/月",
 						"http://www.366music.com/jme/jme4g6.json");
 				break;
 			case R.id.month_ImageButton2:
-				IntentMenu("600966020000006040", "SuperWifi包，10元/月",
+				IntentMenu("600967020000006040", "SuperWifi包，10元/月",
 						"http://www.366music.com/jme/jmewifi10.json");
 				break;
 			case R.id.month_ImageButton3:
-				IntentMenu("600966020000006029", "超会专享包，15元/月",
+				IntentMenu("600967020000006029", "超会专享包，15元/月",
 						"http://www.366music.com/jme/jmezx15.json");
 				break;
 			case R.id.month_ImageButton4:
-				IntentMenu("600966020000006012", "5G空间包，20元/月",
+				IntentMenu("600967020000006012", "5G空间包，20元/月",
 						"http://www.366music.com/jme/jme5g20.json");
 				break;
 			case R.id.month_ImageButton5:
-				IntentMenu("600966020000006625", "高速互联包，30元/月",
+				IntentMenu("600967020000006625", "高速互联包，30元/月",
 						"http://www.366music.com/jme/jmegshl30.json");
 				break;
 
